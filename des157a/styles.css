@@ -258,6 +258,10 @@ main {
     margin-top: 20px;
 }
 
+section:first-of-type {
+    margin-left: 0px;
+}
+
 section {
     width: 33%;
     margin-right: 20px;
@@ -265,7 +269,7 @@ section {
 }
 
 section:last-of-type {
-    margin-right: 0px;
+    margin-right: 20px;
 }
 
 h3 {
