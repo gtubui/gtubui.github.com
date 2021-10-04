@@ -1,0 +1,318 @@
+html {
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 7%;
+    margin-right: 7%;
+    background: #404f67;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+ul li a {
+    opacity: 90%;
+    font-size: 16px;
+}
+
+main, footer {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, a {
+    color: #d5b8a5;
+}
+
+#banner, section {
+    border: 5px ridge #d5b8a5;
+    background-color: #3f6e8c;
+}
+
+#one, #twomiddle, #three, #four, #fivemiddle, #six, #seven {
+    background-color: #aab9bf;
+}
+
+#twoleft, #tworight, #fiveleft, #fiveright {
+    background-color: #3f6e8c;
+}
+
+#circle {
+    background-color: #c3884c;
+}
+
+#banner {
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#banner:hover {
+    cursor: crosshair;
+}
+
+#one {
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    border-radius: 50px;
+    animation: one 2s linear infinite alternate;
+}
+
+@keyframes one {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -50px;
+    }
+}
+
+#two {
+    display: flex;
+}
+
+#twoleft {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    margin: 0;
+    width: 20px;
+    height: 15px;
+    border-radius: 50px;  
+}
+
+#twomiddle {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    margin: 0;
+    width: 40px;
+    height: 15px;
+    border-radius: 50px;
+}
+
+#tworight {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    margin: 0;
+    width: 60px;
+    height: 15px;
+    border-radius: 50px;
+}
+
+#three {
+    position: absolute;
+    left: -20px;
+    top: 35px;
+    width: 120px;
+    height: 20px;
+    border-radius: 50px;
+    animation: three 2s linear infinite alternate;
+}
+
+@keyframes three {
+    from {
+        left: -50px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+#four {
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    width: 200px;
+    height: 20px;
+    border-radius: 50px;
+    animation: four 2s linear infinite alternate;
+}
+
+@keyframes four {
+    from {
+        left: 400px;
+    }
+    to {
+        left: 450px;
+    }
+}
+
+#five {
+    display: flex;
+}
+
+#fiveleft {
+    position: absolute;
+    left: 480px;
+    top: 120px;
+    margin: 0;
+    width: 40px;
+    height: 15px;
+    border-radius: 50px;  
+}
+
+#fivemiddle {
+    position: absolute;
+    left: 510px;
+    top: 120px;
+    margin: 0;
+    width: 80px;
+    height: 15px;
+    border-radius: 50px;
+}
+
+#fiveright {
+    position: absolute;
+    left: 550px;
+    top: 120px;
+    margin: 0;
+    width: 60px;
+    height: 15px;
+    border-radius: 50px;
+}
+
+#six {
+    position: absolute;
+    left: 500px;
+    top: 135px;
+    width: 150px;
+    height: 20px;
+    border-radius: 50px;
+    animation: six 2s linear infinite alternate;
+}
+
+@keyframes six {
+    from {
+        left: 500px;
+    }
+    to {
+        left: 450px;
+    }
+}
+
+#seven {
+    position: absolute;
+    left: 150px;
+    top: 230px;
+    width: 150px;
+    height: 20px;
+    border-radius: 50px;
+    animation: seven 2s linear infinite alternate;
+}
+
+@keyframes seven {
+    from {
+        left: 150px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+#circle {
+    position: absolute;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    left: 800px;
+    top: -225px;
+}
+
+#banner:hover > #circle {
+    opacity: 1;
+    animation: fade 1s linear infinite alternate;
+}
+
+@keyframes fade {
+  from {
+      opacity: 50%;
+  }
+  to {
+      opacity: 100%;
+  }
+}
+
+main {
+    display: flex;
+    margin-top: 20px;
+}
+
+section {
+    width: 33%;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+section:last-of-type {
+    margin-right: 0px;
+}
+
+h3 {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.first:first-of-type {
+    margin-top: 10px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+    line-height: 2em;
+    list-style-type: none;
+}
+
+#last:last-of-type {
+    margin-bottom: 10px;
+}
+
+li {
+    margin: 0px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    border: none;
+    background-color: none;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+footer p {
+    width: 33%;
+}
+
+#mail {
+    font-size: 80%;
+}
