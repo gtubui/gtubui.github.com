@@ -1,0 +1,182 @@
+html {
+    background-color:aliceblue;
+    margin: 0 150px 0px 150px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.htmlindex {
+    margin-left: 310px;
+}
+
+h1 {
+    position: relative;
+    margin: 0;
+    font-size: 200px;
+    line-height: 150px;
+    opacity: 0.25;
+    transform: rotate(270deg)
+}
+
+header {
+    display: flex;
+}
+
+.h1journal, .h1entry {
+    font-size: 100px;
+    line-height: 200px;
+    opacity: 1;
+    transform: none;
+}
+
+.h1journal {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 2em;
+    padding: 150px 50px 100px 0px;
+    text-align: right;
+    border-right: solid 3px black;
+    height: 100vmax;
+}
+
+.h1entry {
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 2em;
+    padding: 150px 0 0 55px;
+}
+
+.naventry, .sectionentry, .footerentry, .footerentry2 {
+    position: absolute;
+    left: 35%;
+    top: 500px;
+    width: 50%;
+}
+
+.naventry {
+    top: 350px;
+    width: 400px;
+}
+
+.sectionentry {
+    top: 450px;
+}
+
+.footerentry {
+    top: 1300px;
+    width: 575px;
+    padding-left: 100px;
+}
+
+.footerentry2 {
+    top: 1025px;
+    width: 575px;
+    padding-left: 100px;
+}
+
+.h1one {
+    top: 400px;
+}
+
+.h1two {
+    top: -50px;
+    left: 152px;
+}
+
+h2:hover, a:hover {
+    color: goldenrod
+}
+
+nav, article, footer {
+    background-color: white;
+    border: solid 5px black;
+    filter: drop-shadow(-10px 10px 0px rgb(45, 45, 45));
+}
+
+nav {
+    display: flex;
+    padding: 10px 0 10px 0;
+    text-decoration: none;
+    width: 400px;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    width: 140px;
+    padding-left: 35px;
+}
+
+nav ul li div {
+    display: block;
+    position: absolute;
+    border: solid 1px black;
+    height: 50px;
+    top: 15px;
+    left: 190px;
+}
+
+.submenu {
+    position: absolute;
+    left: -9999px;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+    top: 50px;
+    left: 165px;
+    width: 200px;
+    padding-left: 35px;
+}
+
+nav ul li:hover .submenu li {
+    background-color: white;
+    border: solid 5px black;
+    
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    position: relative;
+    margin-top: 50px;
+    width: 410px;
+}
+
+article {
+    padding: 20px;
+}
+
+article:first-of-type {
+    margin-bottom: 50px;
+}
+
+p {
+    line-height: 2em;
+}
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 35px;
+    width: 360px;
+}
+
+footer p {
+    width: 33%;
+}
