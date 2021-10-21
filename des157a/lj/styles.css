@@ -21,6 +21,15 @@ header {
     display: flex;
 }
 
+.h1one {
+    top: 500px;
+}
+
+.h1two {
+    top: 100px;
+    left: 152px;
+}
+
 .h1journal, .h1entry {
     font-size: 100px;
     line-height: 200px;
@@ -39,7 +48,7 @@ header {
 }
 
 .h1entry {
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 600;
     line-height: 2em;
     padding: 150px 0 0 55px;
@@ -63,23 +72,14 @@ header {
 
 .footerentry {
     top: 1300px;
-    width: 575px;
+    width: 512px;
     padding-left: 100px;
 }
 
 .footerentry2 {
-    top: 1025px;
-    width: 575px;
+    top: 1075px;
+    width: 512px;
     padding-left: 100px;
-}
-
-.h1one {
-    top: 400px;
-}
-
-.h1two {
-    top: -50px;
-    left: 152px;
 }
 
 h2:hover, a:hover {
@@ -93,10 +93,12 @@ nav, article, footer {
 }
 
 nav {
+    position: absolute;
     display: flex;
     padding: 10px 0 10px 0;
     text-decoration: none;
     width: 400px;
+    top: 210px;
 }
 
 nav ul li a {
@@ -122,15 +124,24 @@ nav ul li div {
     left: -9999px;
 }
 
-nav ul li:hover .submenu {
+nav:hover .submenu {
     display: block;
-    top: 50px;
-    left: 165px;
-    width: 200px;
-    padding-left: 35px;
+    top: 80px;
+    left: 150px;
+    width: 215px;
+    
 }
 
-nav ul li:hover .submenu li {
+nav:hover .submenu:first-of-type {
+    border-top: solid 3px black;
+}
+
+nav ul li ul li a {
+    padding: 25px 0px 25px 55px;
+    
+}
+
+nav:hover .submenu li {
     background-color: white;
     border: solid 5px black;
     
