@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/ae2b3ddb63.js' crossorigin='anonymous'></script>
+    <link href='https://fonts.googleapis.com/css2?family=Dosis&family=Rock+Salt&display=swap' rel='stylesheet'>
+    <link href='styles.css' rel='stylesheet'>
+    <script src='script.js' defer></script>
+    <title>Adventure Mad Libs</title>
+</head>
+<body>
+    <main>
+        <form id='form1' class='showing'>
+            <h1>A New Adventure Awaits...</h1>
+
+            <section class='grid'>
+                <div class='one'>
+                    <label for='userName'>Your name:</label>
+                </div>
+                <div class='two'>
+                    <input type='text' id='userName' value='Bob' required>
+                </div>
+
+                <div class='four'>
+                    <p>Short or long hair?</p>
+                </div>
+                <div class='six'>
+                    <input type='radio' name='hair' id='hair-short' value='hair-short' checked>
+                    <label for='hair-short'>short hair</label>
+                </div>
+                <div class='seven'>
+                    <input type='radio' name='hair' id='hair-long' value='hair-long'>
+                    <label for='hair-long'>long hair</label>
+                </div>
+                    
+                <div class='eight'>
+                    <label for='companionName'>Your companion's name:</label>
+                </div>
+                <div class='ten'>
+                    <input type='text' id='companionName' value='Fred' required>
+                </div>
+
+                <div class='twelve'>
+                    <p>Choose a companion:</p>
+                </div>
+                <div class='fourteen'>
+                    <input type='radio' name='companion' id='companion-dog' value='companion-dog' checked>
+                    <label for='companion-dog'>propeller dog</label>
+                </div>
+                <div class='fifteen'>
+                    <input type='radio' name='companion' id='companion-cat' value='companion-cat'>
+                    <label for='companion-cat'>cat in boots</label>
+                </div>
+                <div class='sixteen'>
+                    <input type='radio' name='companion' id='companion-frog' value='companion-frog'>
+                    <label for='companion-frog'>tiny forg</label>
+                </div>
+                <div class='seventeen'>
+                    <input type='radio' name='companion' id='companion-blob' value='companion-blob'>
+                    <label for='companion-blob'>...a blob?</label>
+                </div>
+            </section>
+
+            <button type='button' id='nextBtnForm'>Next &gt;</button>
+
+            <p id='dog1'><img src='images/dog.png' alt='dog'></p>
+            <p id='cat'><img src='images/cat.png' alt='cat'></p>
+        </form>
+
+        <form id='form2' class='hidden'>
+            <h1>A New Adventure Awaits...</h1>
+
+            <section id='section2' class='grid'>
+                <div class='one'>
+                    <p>Choose a weapon:</p>
+                </div>
+                <div class='two'>
+                    <input type='radio' name='weapon' id='weapon-sword' value='weapon-sword' checked>
+                    <label for='weapon-sword'>sword</label>
+                </div>
+                <div class='three'>
+                    <input type='radio' name='weapon' id='weapon-spear' value='weapon-spear'>
+                    <label for='weapon-spear'>spear</label>
+                </div>
+                <div class='four'>
+                    <input type='radio' name='weapon' id='weapon-bow' value='weapon-bow'>
+                    <label for='weapon-bow'>bow</label>
+                </div>
+
+                <div class='six'>
+                    <p>Choose a hat:</p>
+                </div>
+                <div class='eight'>
+                    <input type='radio' name='hat' id='hat-chef' value='hat-chef' checked>
+                    <label for='hat-chef'>chef hat</label>
+                </div>
+                <div class='nine'>
+                    <input type='radio' name='hat' id='hat-cowboy' value='hat-cowboy'>
+                    <label for='hat-cowboy'>cowboy hat</label>
+                </div>
+                <div class='ten'>
+                    <input type='radio' name='hat' id='hat-chicken' value='hat-chicken'>
+                    <label for='hat-chicken'>chicken</label>
+                </div>
+
+                <div class='twelve'>
+                    <p>Choose a treat:</p>
+                </div>
+                <div class='fourteen'>
+                    <input type='radio' name='treat' id='treat-chocolate' value='treat-chocolate' checked>
+                    <label for='treat-chocolate'>chocolate bar</label>
+                </div>
+                <div class='fifteen'>
+                    <input type='radio' name='treat' id='treat-cake' value='treat-cake'>
+                    <label for='treat-cake'>strawberry shortcake</label>
+                </div>
+                <div class='sixteen'>
+                    <input type='radio' name='treat' id='treat-lollipop' value='treat-chocolate'>
+                    <label for='treat-chocolate'>lollipop</label>
+                </div>
+                <div class='seventeen'>
+                    <input type='radio' name='treat' id='treat-icecream' value='treat-icecream'>
+                    <label for='treat-icecream'>ice cream cone</label>
+                </div>
+            </section>
+
+            <button type='button' id='prevBtnForm'>&lt; Previous</button>
+            <button type='button' id='submitBtn'>Begin Your Adventure!</button>
+
+            <p id='sword'><img src='images/sword.png' alt='sword'></p>
+            <p id='spear'><img src='images/spear.png' alt='spear'></p>
+            <p id='bow'><img src='images/bow.png' alt='bow'></p>
+        </form>
+
+        <div id='madlib1' class='hidden'>
+            <h1>Your Adventure Begins!</h1>
+            <section class='section3'>
+                <p id='madlib1P'></p>
+                <button type='button' id='nextBtn1'>Next &gt;</button>
+            </section>
+            <p id='shorthair'><img src='images/shorthair.png' alt="person with short hair"></p>
+            <p id='dog2'><img src='images/dog.png' alt='dog'></p>
+        </div>
+
+        <div id='madlib2' class='hidden'>
+            <h1>Did Someone Say... "Hats?"</h1>
+            <section class='section3'>
+                <p id='madlib2P'></p>
+                <button type='button' id='nextBtn2'>Next &gt;</button>
+                <button type='button' id='prevBtn1'>&lt; Previous</button>
+            </section>
+            <p id='shorthair2'><img src='images/shorthair.png' alt="person with short hair"></p>
+            <p id='chefhat'><img src='images/chefhat.png' alt='chef hat'></p>
+            <p id='dog3'><img src='images/dog.png' alt='dog'></p>
+        </div>
+
+        <div id='madlib3' class='hidden'>
+            <h1>Treat Yo' Self!</h1>
+            <section class='section3'>
+                <p id='madlib3P'></p>
+                <button type='button' id='prevBtn2'>&lt; Previous</button>
+            </section>
+            <p id='chocolate'><img src='images/chocolate.png' alt='chocolate'></p>
+        </div>
+    </main>
+
+    <footer>
+        <p><img src='mailto:&#103;&#116;&#117;&#098;&#117;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;'>E-mail <i class='far fa-envelope' id='mail'></i></p>
+        <p><img src='https://validator.w3.org/check?uri=https://gtubui.github.io/des157a'>Valid HTML</p>
+        <p><img src='https://jigsaw.w3.org/css-validator/check/referer'>Valid CSS</p>
+    </footer>
+</body>
+</html>

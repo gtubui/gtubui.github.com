@@ -1,0 +1,252 @@
+html {
+    font-family: 'Dosis', sans-serif;
+    margin: 20px;
+    background-color: #464646;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #fff1bb;
+    height: 85vh;
+    margin-top: 35px;
+    padding: 75px 0 0px 200px;
+    border-radius: 10px;
+    border: ridge 3px #b6b096
+}
+
+main {
+    width: 500px;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive !important;
+    margin-left: 10px;
+    padding-bottom: 20px;
+    width: 1000px;
+}
+
+section {
+    background-color: white;
+    height: 80%;
+    padding: 40px 30px 20px 30px;
+    border-radius: 10px;
+    border: solid 1px #b6b096
+}
+
+#section2 {
+    padding-bottom: 60px;
+}
+
+.section3 {
+    position: relative;
+    /* margin-bottom: ; */
+    padding-bottom: 60px;
+    width: 160%;
+}
+
+#madlib1P, #madlib2P, #madlib3P {
+    line-height: 2.5em;
+    font-size: 18px;
+}
+
+div {
+    display: block;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#userName, #hair-long, #companionName, #companion-blob, #weapon-bow, #hat-chicken, #treat-icecream {
+    margin-bottom: 25px;
+}
+
+form, #madlib1, #madlib2, #madlib3 {
+    position: relative;
+}
+
+#nextBtnForm, #submitBtn, #nextBtn1, #nextBtn2, #prevBtn2 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 20px;
+    padding: 5px;
+}
+
+#prevBtnForm {
+    position: absolute;
+    right: 32%;
+    bottom: 0px;
+    margin: 20px;
+    padding: 5px;
+}
+
+#prevBtn1 {
+    position: absolute;
+    right: 8%;
+    bottom: 0px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    padding: 40px 30px 40px 30px;
+    width: 500px;
+}
+
+footer p {
+    width: 33%;
+    bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+#dog1 {
+    position: absolute;
+    top: 15%;
+    left: 125%;
+}
+
+#cat {
+    position: absolute;
+    top: 65%;
+    left: 115%;
+}
+
+#sword {
+    position: absolute;
+    top: 15%;
+    left: 105%;
+}
+
+#spear {
+    position: absolute;
+    top: 35%;
+    left: 150%;
+}
+
+#bow {
+    position: absolute;
+    top: 65%;
+    left: 110%;
+}
+
+#shorthair {
+    position: absolute;
+    top: 105%;
+    left: 25%;
+}
+
+#dog2 {
+    position: absolute;
+    top: 105%;
+    left: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 160px 160px;
+    grid-template-rows: 17;
+    row-gap: 15px;
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.three {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.six {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.seven {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.eight {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.nine {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.ten {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.eleven {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.twelve {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.thirteen {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.fourteen {
+    grid-column: 1;
+    grid-row: 8;
+}
+
+.fifteen {
+    grid-column: 2;
+    grid-row: 8;
+}
+
+.sixteen {
+    grid-column: 1;
+    grid-row: 9;
+}
+
+.seventeen {
+    grid-column: 2;
+    grid-row: 9;
+}

@@ -83,7 +83,15 @@ header {
 }
 
 h2:hover, a:hover {
-    color: goldenrod
+    color: goldenrod;
+}
+
+.readmore {
+    color: goldenrod;
+}
+
+#readmore:hover {
+    color: red;
 }
 
 nav, article, footer {
@@ -129,7 +137,6 @@ nav:hover .submenu {
     top: 80px;
     left: 150px;
     width: 215px;
-    
 }
 
 nav:hover .submenu:first-of-type {
@@ -170,9 +177,6 @@ section {
 
 article {
     padding: 20px;
-}
-
-article:first-of-type {
     margin-bottom: 50px;
 }
 
