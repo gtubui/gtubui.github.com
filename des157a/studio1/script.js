@@ -96,6 +96,8 @@
         console.log('submit button clicked');
         form2.className = 'hidden';
         madlib1.className = 'showing';
+        document.getElementsByTagName('html')[0].style.backgroundColor = '#fff1bb';
+        document.getElementsByTagName('body')[0].style.border = 'none'
 
         // glenda says: get the values within the 'submit' function
         userName = document.querySelector('#userName').value;
@@ -270,6 +272,8 @@
             alert('Please enter both your name and companion\'s name!');
             form1.className = 'showing';
             madlib1.className = 'hidden';
+            document.getElementsByTagName('html')[0].style.backgroundColor = '#464646';
+            document.getElementsByTagName('body')[0].style.border = 'ridge 3px #b6b096'
         }
 
         if (userName == '') {
