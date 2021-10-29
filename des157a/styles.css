@@ -20,13 +20,14 @@ h2 {
 }
 
 h3 {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 ul li a {
     opacity: 90%;
-    font-size: 16px;
+    font-weight: 500px;
+    font-size: 18px;
 }
 
 main, footer {
@@ -269,7 +270,7 @@ section {
 }
 
 section:last-of-type {
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 h3 {
@@ -303,8 +304,8 @@ footer {
     margin-top: 50px;
     border: none;
     background-color: none;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 footer p {
