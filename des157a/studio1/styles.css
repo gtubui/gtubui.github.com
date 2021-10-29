@@ -9,10 +9,15 @@ html {
 body {
     background-color: #fff1bb;
     height: 85vh;
-    margin-top: 35px;
-    padding: 75px 0 0px 200px;
+    margin-top: 30px;
+    padding: 75px 0 0px 150px;
     border-radius: 10px;
     border: ridge 3px #b6b096
+}
+
+b {
+    font-weight: normal;
+    background-color: yellow;
 }
 
 main {
@@ -40,9 +45,13 @@ section {
 
 .section3 {
     position: relative;
-    /* margin-bottom: ; */
-    padding-bottom: 60px;
-    width: 160%;
+    padding-top: 20px;
+    width: 190%;
+    height: 35vh;
+}
+
+.section3 p {
+    font-size: 20px;
 }
 
 #madlib1P, #madlib2P, #madlib3P {
@@ -85,7 +94,7 @@ form, #madlib1, #madlib2, #madlib3 {
 
 #prevBtn1 {
     position: absolute;
-    right: 8%;
+    right: 9%;
     bottom: 0px;
     margin: 20px;
     padding: 5px;
@@ -103,7 +112,7 @@ footer {
     position: absolute;
     bottom: 20px;
     display: flex;
-    padding: 40px 30px 40px 30px;
+    padding: 40px 30px 15px 30px;
     width: 500px;
 }
 
@@ -113,51 +122,232 @@ footer p {
 }
 
 a {
-    text-decoration: none;
-    color: blue;
+    text-decoration: dotted underline;
+    color: black;
 }
 
-#dog1 {
-    position: absolute;
-    top: 15%;
-    left: 125%;
-}
+/* FORM PAGE 1 */
+    #shorthair {
+        position: absolute;
+        top: 15%;
+        left: 150%;
+    }
 
-#cat {
-    position: absolute;
-    top: 65%;
-    left: 115%;
-}
+    #longhair {
+        position: absolute;
+        top: 60%;
+        left: 120%;
+    }
 
+/* FORM PAGE 2 */
 #sword {
     position: absolute;
     top: 15%;
-    left: 105%;
+    left: 115%;
 }
 
 #spear {
     position: absolute;
     top: 35%;
-    left: 150%;
+    left: 170%;
 }
 
 #bow {
     position: absolute;
     top: 65%;
-    left: 110%;
+    left: 125%;
 }
 
-#shorthair {
+/* MADLIBS PAGE 1 */
+    #shorthair2 {
+        position: absolute;
+        top: 98%;
+        left: 20%;
+        transform: scale(0.9,0.9)
+    }
+
+    #longhair2 {
+        position: absolute;
+        top: 94%;
+        left: 20%;
+        transform: scale(0.8,0.8)
+    }
+
+    #dog {
+        position: absolute;
+        top: 87%;
+        left: 79%;
+    }
+
+    #cat {
+        position: absolute;
+        top: 92%;
+        left: 85%;
+    }
+
+    #frog {
+        position: absolute;
+        top: 109%;
+        left: 97%;
+    }
+
+    #blob {
+        position: absolute;
+        top: 107%;
+        left: 95%;
+    }
+
+    #sword2 {
+        position: absolute;
+        top: 95%;
+        left: 150%;
+        transform: scale(.9,.9);
+    }
+
+    #spear2 {
+        position: absolute;
+        top: 94%;
+        left: 150%;
+        transform: scale(.8,.8);
+    }
+
+    #bow2 {
+        position: absolute;
+        top: 103%;
+        left: 153%;
+        transform: scale(.9,.9);
+    }
+
+/* MADLIBS PAGE 2 */
+#shorthair3 {
     position: absolute;
-    top: 105%;
-    left: 25%;
+    top: 90%;
+    left: 30%;
+    transform: scale(1,1)
+}
+
+#longhair3 {
+    position: absolute;
+    top: 88%;
+    left: 30%;
+    transform: scale(0.9,0.9)
 }
 
 #dog2 {
     position: absolute;
-    top: 105%;
-    left: 100%;
+    top: 100%;
+    left: 105%;
 }
+
+#cat2 {
+    position: absolute;
+    top: 105%;
+    left: 115%;
+}
+
+#frog2 {
+    position: absolute;
+    top: 112%;
+    left: 125%;
+}
+
+#blob2 {
+    position: absolute;
+    top: 108%;
+    left: 125%;
+}
+
+#chef {
+    position: absolute;
+    top: 75%;
+    left: 38%;
+}
+
+#chef2 {
+    position: absolute;
+    top: 95%;
+    left: 115%;
+    transform: scale(0.8,0.8);
+}
+
+#chef3 {
+    position: absolute;
+    top: 103.5%;
+    left: 119%;
+    transform: scale(0.2,0.2);
+}
+
+#cowboy {
+    position: absolute;
+    top: 80%;
+    left: 38%;
+}
+
+#cowboy2 {
+    position: absolute;
+    top: 97%;
+    left: 116%;
+    transform: scale(0.8,0.8);
+}
+
+#cowboy3 {
+    position: absolute;
+    top: 102%;
+    left: 115.5%;
+    transform: scale(0.8,0.8) rotate(15deg);
+}
+
+#cowboy4 {
+    position: absolute;
+    top: 106.5%;
+    left: 119%;
+    transform: scale(0.2,0.2);
+}
+
+#chicken {
+    position: absolute;
+    top: 75%;
+    left: 34%;
+}
+
+#chicken2 {
+    position: absolute;
+    top: 95%;
+    left: 112%;
+    transform: scale(0.6,0.6);
+}
+
+#chicken3 {
+    position: absolute;
+    top: 103%;
+    left: 115%;
+    transform: scale(0.2,0.2);
+}
+
+/* MADLIBS PAGE 3 */
+    #chocolate {
+        position: absolute;
+        top: 80%;
+        left: 110%;
+    }
+
+    #cake {
+        position: absolute;
+        top: 80%;
+        left: 110%;
+    }
+
+    #lollipop {
+        position: absolute;
+        top: 75%;
+        left: 110%;
+    }
+
+    #icecream {
+        position: absolute;
+        top: 70%;
+        left: 115%;
+    }
 
 .grid {
     display: grid;

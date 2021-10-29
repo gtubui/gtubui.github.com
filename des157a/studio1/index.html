@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,6 +12,7 @@
     <script src='script.js' defer></script>
     <title>Adventure Mad Libs</title>
 </head>
+
 <body>
     <main>
         <form id='form1' class='showing'>
@@ -21,53 +23,53 @@
                     <label for='userName'>Your name:</label>
                 </div>
                 <div class='two'>
-                    <input type='text' id='userName' value='Bob' required>
+                    <input type='text' id='userName' placeholder='Bob' required>
                 </div>
 
                 <div class='four'>
                     <p>Short or long hair?</p>
                 </div>
                 <div class='six'>
-                    <input type='radio' name='hair' id='hair-short' value='hair-short' checked>
-                    <label for='hair-short'>short hair</label>
+                    <label for='hair-short'><input type='radio' name='hair' id='hair-short' value='hair-short' checked>
+                    short hair</label>
                 </div>
                 <div class='seven'>
-                    <input type='radio' name='hair' id='hair-long' value='hair-long'>
-                    <label for='hair-long'>long hair</label>
+                    <label for='hair-long'><input type='radio' name='hair' id='hair-long' value='hair-long'>
+                    long hair</label>
                 </div>
-                    
+
                 <div class='eight'>
                     <label for='companionName'>Your companion's name:</label>
                 </div>
                 <div class='ten'>
-                    <input type='text' id='companionName' value='Fred' required>
+                    <input type='text' id='companionName' placeholder='Fred' required>
                 </div>
 
                 <div class='twelve'>
                     <p>Choose a companion:</p>
                 </div>
                 <div class='fourteen'>
-                    <input type='radio' name='companion' id='companion-dog' value='companion-dog' checked>
-                    <label for='companion-dog'>propeller dog</label>
+                    <label for='companion-dog'><input type='radio' name='companion' id='companion-dog' value='companion-dog' checked>
+                    propeller dog</label>
                 </div>
                 <div class='fifteen'>
-                    <input type='radio' name='companion' id='companion-cat' value='companion-cat'>
-                    <label for='companion-cat'>cat in boots</label>
+                    <label for='companion-cat'><input type='radio' name='companion' id='companion-cat' value='companion-cat'>
+                    cat in boots</label>
                 </div>
                 <div class='sixteen'>
-                    <input type='radio' name='companion' id='companion-frog' value='companion-frog'>
-                    <label for='companion-frog'>tiny forg</label>
+                    <label for='companion-frog'><input type='radio' name='companion' id='companion-frog' value='companion-frog'>
+                    tiny frog</label>
                 </div>
                 <div class='seventeen'>
-                    <input type='radio' name='companion' id='companion-blob' value='companion-blob'>
-                    <label for='companion-blob'>...a blob?</label>
+                    <label for='companion-blob'><input type='radio' name='companion' id='companion-blob' value='companion-blob'>
+                    ...a blob?</label>
                 </div>
             </section>
 
             <button type='button' id='nextBtnForm'>Next &gt;</button>
 
-            <p id='dog1'><img src='images/dog.png' alt='dog'></p>
-            <p id='cat'><img src='images/cat.png' alt='cat'></p>
+            <p id='shorthair'><img src='images/shorthair.png' alt='person with short hair'></p>
+            <p id='longhair'><img src='images/longhair.png' alt='person with long hair'></p>
         </form>
 
         <form id='form2' class='hidden'>
@@ -78,57 +80,59 @@
                     <p>Choose a weapon:</p>
                 </div>
                 <div class='two'>
-                    <input type='radio' name='weapon' id='weapon-sword' value='weapon-sword' checked>
-                    <label for='weapon-sword'>sword</label>
+                    <label for='weapon-sword'><input type='radio' name='weapon' id='weapon-sword' value='weapon-sword' checked>
+                    sword</label>
                 </div>
                 <div class='three'>
-                    <input type='radio' name='weapon' id='weapon-spear' value='weapon-spear'>
-                    <label for='weapon-spear'>spear</label>
+                    <label for='weapon-spear'><input type='radio' name='weapon' id='weapon-spear' value='weapon-spear'>
+                    spear</label>
                 </div>
                 <div class='four'>
-                    <input type='radio' name='weapon' id='weapon-bow' value='weapon-bow'>
-                    <label for='weapon-bow'>bow</label>
+                    <label for='weapon-bow'><input type='radio' name='weapon' id='weapon-bow' value='weapon-bow'>
+                    bow</label>
                 </div>
 
                 <div class='six'>
                     <p>Choose a hat:</p>
                 </div>
                 <div class='eight'>
-                    <input type='radio' name='hat' id='hat-chef' value='hat-chef' checked>
-                    <label for='hat-chef'>chef hat</label>
+                    <label for='hat-chef'><input type='radio' name='hat' id='hat-chef' value='hat-chef' checked>
+                    chef hat</label>
                 </div>
                 <div class='nine'>
-                    <input type='radio' name='hat' id='hat-cowboy' value='hat-cowboy'>
-                    <label for='hat-cowboy'>cowboy hat</label>
+                    <label for='hat-cowboy'><input type='radio' name='hat' id='hat-cowboy' value='hat-cowboy'>
+                    cowboy hat</label>
                 </div>
                 <div class='ten'>
-                    <input type='radio' name='hat' id='hat-chicken' value='hat-chicken'>
-                    <label for='hat-chicken'>chicken</label>
+                    <label for='hat-chicken'><input type='radio' name='hat' id='hat-chicken' value='hat-chicken'>
+                    chicken</label>
                 </div>
 
                 <div class='twelve'>
                     <p>Choose a treat:</p>
                 </div>
                 <div class='fourteen'>
-                    <input type='radio' name='treat' id='treat-chocolate' value='treat-chocolate' checked>
-                    <label for='treat-chocolate'>chocolate bar</label>
+                    <label for='treat-chocolate'><input type='radio' name='treat' id='treat-chocolate' value='treat-chocolate' checked>
+                    chocolate bar</label>
                 </div>
                 <div class='fifteen'>
-                    <input type='radio' name='treat' id='treat-cake' value='treat-cake'>
-                    <label for='treat-cake'>strawberry shortcake</label>
+                    <label for='treat-cake'><input type='radio' name='treat' id='treat-cake' value='treat-cake'>
+                    strawberry shortcake</label>
                 </div>
                 <div class='sixteen'>
-                    <input type='radio' name='treat' id='treat-lollipop' value='treat-chocolate'>
-                    <label for='treat-chocolate'>lollipop</label>
+                    <label for='treat-lollipop'><input type='radio' name='treat' id='treat-lollipop' value='treat-lollipop'>
+                    lollipop</label>
                 </div>
                 <div class='seventeen'>
-                    <input type='radio' name='treat' id='treat-icecream' value='treat-icecream'>
-                    <label for='treat-icecream'>ice cream cone</label>
+                    <label for='treat-icecream'><input type='radio' name='treat' id='treat-icecream' value='treat-icecream'>
+                    ice cream cone</label>
                 </div>
             </section>
 
             <button type='button' id='prevBtnForm'>&lt; Previous</button>
-            <button type='button' id='submitBtn'>Begin Your Adventure!</button>
+            <!-- from glenda: change this to input type="submit" -->
+            <!-- <button type='button' id='submitBtn'>Begin Your Adventure!</button> -->
+            <input type='submit' id='submitBtn' value='Begin Your Adventure!''>
 
             <p id='sword'><img src='images/sword.png' alt='sword'></p>
             <p id='spear'><img src='images/spear.png' alt='spear'></p>
@@ -139,38 +143,67 @@
             <h1>Your Adventure Begins!</h1>
             <section class='section3'>
                 <p id='madlib1P'></p>
-                <button type='button' id='nextBtn1'>Next &gt;</button>
+                <button type='button' id='nextBtn1'>Continue Your Adventure &gt;</button>
             </section>
-            <p id='shorthair'><img src='images/shorthair.png' alt="person with short hair"></p>
-            <p id='dog2'><img src='images/dog.png' alt='dog'></p>
+            <p id='shorthair2' class='hidden'><img src='images/shorthair.png' alt="person with short hair"></p>
+            <p id='longhair2' class='hidden'><img src='images/longhair.png' alt="person with long hair"></p>
+            <p id='dog' class='hidden'><img src='images/dog.png' alt='dog'></p>
+            <p id='cat' class='hidden'><img src='images/cat.png' alt='cat'></p>
+            <p id='frog' class='hidden'><img src='images/frog.png' alt='frog'></p>
+            <p id='blob' class='hidden'><img src='images/blob.png' alt='blob'></p>
+            <p id='sword2' class='hidden'><img src='images/sword.png' alt='sword'></p>
+            <p id='spear2' class='hidden'><img src='images/spear.png' alt='spear'></p>
+            <p id='bow2' class='hidden'><img src='images/bow.png' alt='bow'></p>
         </div>
 
         <div id='madlib2' class='hidden'>
             <h1>Did Someone Say... "Hats?"</h1>
             <section class='section3'>
                 <p id='madlib2P'></p>
-                <button type='button' id='nextBtn2'>Next &gt;</button>
-                <button type='button' id='prevBtn1'>&lt; Previous</button>
+                <button type='button' id='nextBtn2'>Onwards! &gt;</button>
+                <button type='button' id='prevBtn1'>&lt; Go Back</button>
             </section>
-            <p id='shorthair2'><img src='images/shorthair.png' alt="person with short hair"></p>
-            <p id='chefhat'><img src='images/chefhat.png' alt='chef hat'></p>
-            <p id='dog3'><img src='images/dog.png' alt='dog'></p>
+            <p id='shorthair3' class='hidden'><img src='images/shorthair.png' alt="person with short hair"></p>
+            <p id='longhair3' class='hidden'><img src='images/longhair.png' alt="person with long hair"></p>
+            <p id='dog2' class='hidden'><img src='images/dog.png' alt='dog'></p>
+            <p id='cat2' class='hidden'><img src='images/cat.png' alt='cat'></p>
+            <p id='frog2' class='hidden'><img src='images/frog.png' alt='frog'></p>
+            <p id='blob2' class='hidden'><img src='images/blob.png' alt='blob'></p>
+            <p id='chef' class='hidden'><img src='images/chef.png' alt='chef hat'></p>
+            <p id='chef2' class='hidden'><img src='images/chef.png' alt='chef hat'></p>
+            <p id='chef3' class='hidden'><img src='images/chef.png' alt='chef hat'></p>
+            <p id='cowboy' class='hidden'><img src='images/cowboy.png' alt='cowboy hat'></p>
+            <p id='cowboy2' class='hidden'><img src='images/cowboy.png' alt='cowboy hat'></p>
+            <p id='cowboy3' class='hidden'><img src='images/cowboy.png' alt='cowboy hat'></p>
+            <p id='cowboy4' class='hidden'><img src='images/cowboy.png' alt='cowboy hat'></p>
+            <p id='chicken' class='hidden'><img src='images/chicken.png' alt='chicken'></p>
+            <p id='chicken2' class='hidden'><img src='images/chicken.png' alt='chicken'></p>
+            <p id='chicken3' class='hidden'><img src='images/chicken.png' alt='chicken'></p>
         </div>
 
         <div id='madlib3' class='hidden'>
             <h1>Treat Yo' Self!</h1>
             <section class='section3'>
                 <p id='madlib3P'></p>
-                <button type='button' id='prevBtn2'>&lt; Previous</button>
+                <button type='button' id='prevBtn2'>&lt; Go Back</button>
             </section>
-            <p id='chocolate'><img src='images/chocolate.png' alt='chocolate'></p>
+            <p id='chocolate' class='hidden'><img src='images/chocolate.png' alt='chocolate bar'></p>
+            <p id='cake' class='hidden'><img src='images/cake.png' alt='strawberry shorcake'></p>
+            <p id='lollipop' class='hidden'><img src='images/lollipop.png' alt='lollipop'></p>
+            <p id='icecream' class='hidden'><img src='images/icecream.png' alt='icecream'></p>
+            <!-- <p id='goodnight'><img src='images/goodnight.png' alt='person sleeping in bed with companion'></p> -->
         </div>
     </main>
 
     <footer>
-        <p><img src='mailto:&#103;&#116;&#117;&#098;&#117;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;'>E-mail <i class='far fa-envelope' id='mail'></i></p>
-        <p><img src='https://validator.w3.org/check?uri=https://gtubui.github.io/des157a'>Valid HTML</p>
-        <p><img src='https://jigsaw.w3.org/css-validator/check/referer'>Valid CSS</p>
+        <!-- glenda says: commented out for troubleshooting -->
+
+        <p><a href='mailto:&#103;&#116;&#117;&#098;&#117;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;'>E-mail
+            <i class='far fa-envelope' id='mail'></i>
+        </p>
+        <p><a href='https://validator.w3.org/check?uri=https://gtubui.github.io/des157a'>Valid HTML</p>
+        <p><a href='https://jigsaw.w3.org/css-validator/check/referer'>Valid CSS</p>
     </footer>
 </body>
+
 </html>
