@@ -270,8 +270,6 @@
             alert('Please enter both your name and companion\'s name!');
             form1.className = 'showing';
             madlib1.className = 'hidden';
-            
-            
         }
 
         if (userName == '') {
