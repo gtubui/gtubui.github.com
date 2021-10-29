@@ -54,7 +54,6 @@
     const lollipop = document.querySelector('#lollipop');
     const treatIceCream = document.querySelector('#treat-icecream');
     const icecream = document.querySelector('#icecream');
-    const goodnight = document.querySelector('#goodnight');
 
     //OUTPUT FONT SIZE 20PX
     document.querySelector('#madlib1P').style.fontSize = '20px';
@@ -266,10 +265,25 @@
             icecream.className = 'showing';
         }
 
+        //EMPTY FIELD ALERT MESSAGE
         if (userName == '' || companionName == '') {
-            alert('Please enter your name and companion\'s name!');
+            alert('Please enter both your name and companion\'s name!');
             form1.className = 'showing';
             madlib1.className = 'hidden';
+            
+            
+        }
+
+        if (userName == '') {
+            document.querySelector('#userName').style.border = '2px solid red';
+        } else {
+            document.querySelector('#userName').style.border = '1px solid black';
+        }
+
+        if (companionName == '') {
+            document.querySelector('#companionName').style.border = '2px solid red';
+        } else {
+            document.querySelector('#companionName').style.border = '1px solid black';
         }
 
     });
