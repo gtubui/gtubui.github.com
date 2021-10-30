@@ -351,7 +351,7 @@ a {
 .grid {
     display: grid;
     grid-template-columns: 160px 160px;
-    grid-template-rows: 17;
+    grid-template-rows: 20px;
     row-gap: 15px;
 }
 
