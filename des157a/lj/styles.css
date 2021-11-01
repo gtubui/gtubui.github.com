@@ -8,6 +8,24 @@ html {
     margin-left: 310px;
 }
 
+figcaption {
+    font-style: italic;
+    font-size: 10px;
+    text-align: center;
+}
+
+#hazel4 {
+    width: 75%;
+}
+
+#salad {
+    height: 500px;
+}
+
+.image {
+    text-align: center;
+}
+
 h1 {
     position: relative;
     margin: 0;
@@ -30,7 +48,7 @@ header {
     left: 152px;
 }
 
-.h1journal, .h1entry {
+.h1journal, .h1entry, .h1journal2 {
     font-size: 100px;
     line-height: 200px;
     opacity: 1;
@@ -45,6 +63,16 @@ header {
     text-align: right;
     border-right: solid 3px black;
     height: 100vmax;
+}
+
+.h1journal2 {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 2em;
+    padding: 150px 50px 100px 0px;
+    text-align: right;
+    border-right: solid 3px black;
+    height: 2450px;
 }
 
 .h1entry {
@@ -78,6 +106,14 @@ header {
 
 .footerentry2 {
     top: 1075px;
+    width: 512px;
+    padding-left: 100px;
+}
+
+.footerentry4 {
+    position: absolute;
+    top: 2465px;
+    left: 478px;
     width: 512px;
     padding-left: 100px;
 }
