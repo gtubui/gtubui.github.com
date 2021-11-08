@@ -1,0 +1,421 @@
+html {
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 30px;
+    margin: 10%;
+    margin-bottom: 0;
+    background-color: #e3e4df;
+    cursor: default;
+}
+
+html, body {
+    /* overscroll-behavior: none; */
+    /* causes css validation error */
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 150px;
+    /* for smaller screen do smaller h1 font size */
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    padding: 1% 0 1% 0;
+    z-index: 2;
+    border: 2px dotted white;
+}
+
+.basil1, .basil2 {
+    position: absolute;
+    z-index: -1;
+    opacity: 60%;
+}
+
+.basil1 {
+    top: -250%;
+    left: 19%;
+    transform: scale(0.25) rotate(0deg);
+}
+
+.basil2 {
+    top: -190%;
+    left: -20%;
+    transform: scale(0.25) rotate(0deg);
+}
+
+header {
+    position: relative;
+}
+
+#navlineleft {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    border: 1px solid black;
+    width: 10%;    
+}
+
+#navlineright {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    border: 1px solid black;
+    width: 10%;    
+}
+
+nav {
+    margin-top: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    margin: 1%;
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 2%;
+}
+
+nav li:first-of-type {
+    padding-left: 2%;
+}
+
+nav a {
+    display: inline-block;
+    height: 50px;
+    width: 65px;
+    padding: 0;
+    padding-top: 10px;
+    /* for smaller screen do padding: 2% 3.5% 2% 3.5% */
+    text-align: center;
+    border: 2px groove black;
+    /* for smaller screen do border: 1px */
+    border-radius: 50%;
+    background-color: #c0cfb2;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #8ba889;
+}
+
+.selected {
+    background-color: #f0f0f0;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    line-height: 1.5em;
+    width: 100%;
+}
+
+.imgdiv {
+    position: relative;
+}
+
+.basilborder {
+    position: absolute;
+    top: 0;
+    right: -2%;
+    pointer-events: none;
+    transform: scale(1.25)
+}
+
+img {
+    width: 100%;
+    border-radius: 25%;
+}
+
+.text1, .text2, .text3, .text4 {
+    padding: 0;
+    height: 70vh;
+}
+
+.text1, .text2, .text3, .text4, .image1, .image2, .image3, .image4 {
+    margin-top: 40%;
+    width: 100%;
+}
+
+.text1, .image1 {
+    margin-top: 20%;
+}
+
+.text4, .image4 {
+    margin-bottom: 25%;
+}
+
+.hover {
+    animation: opacityoff 0.2s linear;
+}
+
+.hover:hover {
+    filter: opacity(75%);
+    animation: opacity 0.2s linear;
+    cursor: pointer;
+}
+
+@keyframes opacity {
+    from  {
+        filter: opacity(100%);
+    }
+    to {
+        filter: opacity(75%);
+    }
+}
+
+@keyframes opacityoff {
+    from  {
+        filter: opacity(75%);
+    }
+    to {
+        filter: opacity(100%);
+    }
+}
+
+#overlayblack {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: black;
+    opacity: 70%;
+    z-index: 1;
+    margin: 0 auto;
+    height: 500vh;
+}
+
+article {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 2% 4.4% 2% 4.4%;
+    border: 10px double #c0cfb2;
+    border-radius: 25px;
+    height: 90vh;
+    width: 90vw;
+    background-color: #e3e4df;
+    z-index: 2;
+}
+
+#overlay1, #overlay2, #overlay3, #overlay4 {
+    position: relative;
+    z-index: 3;
+}
+
+.close {
+    font-size: 40px;
+    position: absolute;
+    top: -20%;
+    right: 3%;
+    margin: 0;
+    background-color: #e3e4df;
+    border: none;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #49654e;
+}
+
+.overlaybasil1, .overlaybasil2 {
+    position: absolute;
+    transform: scale(0.3);
+    z-index: 2;
+}
+
+.overlaybasil1 {
+    top: -1000%;
+    left: -45%;
+    pointer-events: none;
+}
+
+.overlaybasil2 {
+    top: 10%;
+    left: 45%;
+    pointer-events: none;
+}
+
+.overlaylineleft {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    border: 1px solid black;
+    width: 10%;    
+}
+
+.overlaylineright {
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    border: 1px solid black;
+    width: 10%;    
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.overlayimage1 {
+    position: absolute;
+    top: 605%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.overlayimage2 {
+    position: absolute;
+    left: 65%;
+    z-index: 0;
+    opacity: 50%;
+    filter: brightness(50%);
+}
+
+.overlayimage3 {
+    position: absolute;
+    left: 5%;
+    z-index: 0;
+    opacity: 50%;
+    filter: brightness(50%);
+}
+
+.overlayimage2, .overlayimage3 {
+    position: absolute;
+    top: 250%;
+    width: 30%;
+}
+
+.leftarrow {
+    position: absolute;
+    left: 20%;
+}
+
+.rightarrow {
+    position: absolute;
+    left: 78%;
+}
+
+.leftarrow, .rightarrow {
+    color: #3f5844;
+    top: 930%;
+    transform: scale(2);
+}
+
+.leftarrow:hover, .rightarrow:hover {
+    color: #8ba889;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    text-align: center;
+    border: none;
+    justify-content: center;
+    margin-bottom: 10%;
+    padding: 3% 0 3% 0;
+    border: 2px dotted white;
+}
+
+footer div {
+    font-size: 24px;
+    width: 25vw;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: grey;
+}
+
+.footerbasil {
+    position: absolute;
+    bottom: -500%;
+    margin: 0;
+    padding: 0;
+    opacity: 60%;
+    transform: scale(0.1);
+}
+
+#footerbasil1 {
+    left: 48%;
+    bottom: -500%;
+}
+
+#footerbasil2 {
+    left: -47%;
+    bottom: -550%;
+}
+
+#mail {
+    font-size: 80%;
+}
+
+.grid {
+    display: grid;
+    column-gap: 5%;
+}
+
+.text1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.image1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.text2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.image2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.text3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.image3 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.text4 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.image4 {
+    grid-column: 1;
+    grid-row: 4;
+}

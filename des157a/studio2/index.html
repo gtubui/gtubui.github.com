@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/ae2b3ddb63.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link href='styles.css' rel='stylesheet'>
+    <script src='script.js' defer></script>
+    <title>Hazel Basil</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="navlineleft"></div>
+            <ul>
+                <li><a href="#first">1</a></li>
+                <li><a href="#second">2</a></li>
+                <li><a href="#third">3</a></li>
+                <li><a href="#fourth">4</a></li>
+            </ul>
+            <div id="navlineright"></div>
+        </nav>
+        <img class="basil1" src="images/basil1.PNG" alt="basil bunch 1">
+        <h1>Hazel Basil</h1>
+        <img class="basil2" src="images/basil2.PNG" alt="basil bunch 2">
+    </header>
+
+    <div id="overlayblack" class="hidden"></div>
+
+    <main class="grid">
+        <section id="first" class="text1">
+            <h2>Baby Hazel</h2>
+            <p>I was found outside abandoned in a box, but my family rescued me! At first I was super shy... but after a single day passed my true personality came out, and I became a menace. No toy was safe from my wrath. <i>(Click the image for a small slideshow!)</i></p>
+        </section>
+        <section class="image1">
+            <div class="imgdiv">
+                <img class="hover" src="images/babyhazel1.JPG" alt="image of baby hazel 1">
+                <img class="basilborder" src="images/basilborder.PNG" alt="basil border">
+            </div>
+        </section>
+
+        <section id="second" class="image2">
+            <div class="imgdiv">
+                <img class="hover" src="images/sleephazel1.JPG" alt="image of sleeping hazel 1">
+                <img class="basilborder" src="images/basilborder.PNG" alt="basil border">
+            </div>
+        </section>
+        <section class="text2">
+            <h2>Always Sleeping...</h2>
+            <p>I’m all grown up now and all I do is sleep. I don’t even want to go on walks like normal dogs. Just let me sleep! <i>(Click the image for a small slideshow!)</i></p>
+        </section>
+
+        <section id="third" class="text3">
+            <h2>❄ First Time in the Snow ❄</h2>
+            <p>The other day I went to the snow for the first time. To be honest, I am not a fan of the snow... But at least I didn't get left home alone. <i>(Click the image for a small slideshow!)</i></p>
+        </section>
+        <section class="image3">
+            <div class="imgdiv">
+                <img class="hover" src="images/snowhazel1.JPG" alt="image of snow hazel 1">
+                <img class="basilborder" src="images/basilborder.PNG" alt="basil border">
+            </div>
+        </section>
+
+        <section id="fourth" class="image4">
+            <div class="imgdiv">
+                <img class="hover" src="images/derphazel1.JPG" alt="image of derp hazel 1">
+                <img class="basilborder" src="images/basilborder.PNG" alt="basil border">
+            </div>
+        </section>
+        <section class="text4">
+            <h2>Derp</h2>
+            <p>Yeah, yeah, I know I'm not the most photogenic dog. I'm glad my humans think these photos are funny at least. <i>(Click the image for a small slideshow!)</i></p>
+        </section>
+    </main>
+
+    <article class="hidden">
+        <section id="overlay1" class="hidden">
+            <h3>Baby Hazel</h3>
+            <div class="overlaylineleft"></div>
+            <div class="overlaylineright"></div>
+            <button class="close" id="close1">X</button>
+            <img class="overlayimage1" id="babyslide1" id="babyslide1" src="images/babyhazel1.JPG" alt="image of baby hazel 1">
+            <img class="overlayimage2" id="babyslide2" src="images/babyhazel2.JPG" alt="image of baby hazel 2">
+            <img class="overlayimage3" id="babyslide3" src="images/babyhazel3.JPG" alt="image of baby hazel 3">
+            <div class="leftarrow" id="leftarrow1"><i class="fas fa-long-arrow-alt-left"></i></div>
+            <div class="rightarrow" id="rightarrow1"><i class="fas fa-long-arrow-alt-right"></i></div>
+            <img class="overlaybasil1" src="images/basil1.PNG" alt="basil bunch 1">
+            <img class="overlaybasil2" src="images/basil2.PNG" alt="basil bunch 2">
+        </section>
+
+        <section id="overlay2" class="hidden">
+            <h3>Always Sleeping...</h3>
+            <button class="close" id="close2">X</button>
+            <img class="overlayimage1" id="sleepslide1" src="images/sleephazel1.JPG" alt="image of sleeping hazel 1">
+            <img class="overlayimage2" id="sleepslide2" src="images/sleephazel2.JPG" alt="image of sleeping hazel 2">
+            <img class="overlayimage3" id="sleepslide3" src="images/sleephazel3.JPG" alt="image of sleeping hazel 3">
+            <div class="leftarrow" id="leftarrow2"><i class="fas fa-long-arrow-alt-left"></i></div>
+            <div class="rightarrow" id="rightarrow2"><i class="fas fa-long-arrow-alt-right"></i></div>
+            <img class="overlaybasil1" src="images/basil1.PNG" alt="basil bunch 1">
+            <img class="overlaybasil2" src="images/basil2.PNG" alt="basil bunch 2">
+        </section>
+
+        <section id="overlay3" class="hidden">
+            <h3>❄ First Time in the Snow ❄</h3>
+            <button class="close" id="close3">X</button>
+            <img class="overlayimage1" id="snowslide1" src="images/snowhazel1.JPG" alt="image of snow hazel 1">
+            <img class="overlayimage2" id="snowslide2" src="images/snowhazel2.JPG" alt="image of snow hazel 2">
+            <img class="overlayimage3" id="snowslide3" src="images/snowhazel3.JPG" alt="image of snow hazel 3">
+            <div class="leftarrow" id="leftarrow3"><i class="fas fa-long-arrow-alt-left"></i></div>
+            <div class="rightarrow" id="rightarrow3"><i class="fas fa-long-arrow-alt-right"></i></div>
+            <img class="overlaybasil1" src="images/basil1.PNG" alt="basil bunch 1">
+            <img class="overlaybasil2" src="images/basil2.PNG" alt="basil bunch 2">
+        </section>
+
+        <section id="overlay4" class="hidden">
+            <h3>Derp</h3>
+            <div class="overlaylineleft"></div>
+            <div class="overlaylineright"></div>
+            <button class="close" id="close4">X</button>
+            <img class="overlayimage1" id="derpslide1" src="images/derphazel1.JPG" alt="image of derp hazel 1">
+            <img class="overlayimage2" id="derpslide2" src="images/derphazel2.JPG" alt="image of derp hazel 2">
+            <img class="overlayimage3" id="derpslide3" src="images/derphazel3.JPG" alt="image of derp hazel 3">
+            <div class="leftarrow" id="leftarrow4"><i class="fas fa-long-arrow-alt-left"></i></div>
+            <div class="rightarrow" id="rightarrow4"><i class="fas fa-long-arrow-alt-right"></i></div>
+            <img class="overlaybasil1" src="images/basil1.PNG" alt="basil bunch 1">
+            <img class="overlaybasil2" src="images/basil2.PNG" alt="basil bunch 2">
+        </section>
+    </article>
+
+    <footer>
+        <img class="footerbasil" id="footerbasil1" src="images/basil1.PNG" alt="basil bunch 1">
+        <img class="footerbasil" id="footerbasil2" src="images/basil2.PNG" alt="basil bunch 2">
+        <div><a href='mailto:&#103;&#116;&#117;&#098;&#117;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;'>E-mail
+            <i class='far fa-envelope' id='mail'></i></a></div>
+        <div><a href='https://validator.w3.org/check?uri=https://gtubui.github.io/des157a'>Valid HTML</a></div>
+        <div><a href='https://jigsaw.w3.org/css-validator/check/referer'>Valid CSS</a></div>
+    </footer>
+</body>
+
+</html>
