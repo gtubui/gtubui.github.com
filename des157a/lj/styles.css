@@ -118,6 +118,14 @@ header {
     padding-left: 100px;
 }
 
+.footerentry5 {
+    position: absolute;
+    top: 1400px;
+    left: 478px;
+    width: 512px;
+    padding-left: 100px;
+}
+
 h2:hover, a:hover {
     color: goldenrod;
 }
