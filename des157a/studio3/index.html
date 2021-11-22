@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/ae2b3ddb63.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link href='styles.css' rel='stylesheet'>
+    <script src='script.js' defer></script>
+    <title>Gift A Villager!</title>
+</head>
+<body>
+    <header>
+        <h1>GIFT A
+        <br>VILLAGER</h1>
+        <p id="rules">RULES OF THE GAME: Players take turns gifting villagers in order to make friends. If you roll 14 or more, the villager becomes your friend and you may roll again. If you roll 12-13, nothing happens. If you roll 6-11, you lose a friend. If you roll 5 or less, you lose all your friends. For all rolls that are 5-15, your turn ends and it becomes the other player’s turn. There is a pass option for if you’re on a friend streak but feel like your luck may be running out. The first to make it to 10 friends wins!</p>
+    </header>
+
+    <div id="start">
+        <button id="startBtn">Start!</button>
+    </div>
+
+    <main id="main" class="hidden">
+        <div id="centralContent">
+            <div id="score">
+                <h2>Player 1</h2>
+                <h3 id="p1score">Score: 0</h3>
+                <h2>Player 2</h2>
+                <h3 id="p2score">Score: 0</h3>
+            </div>
+            <div id="villager">
+                <!-- <img src="images/sherbx2.gif" alt="sherb"> -->
+                <img src="images/sherbx4.gif" alt="sherb">
+                <h3 id="villagerName">Sherb</h3>
+            </div>
+            <div id="diceInteraction">
+                <p id="dicePrompt"></p>
+                <div id="dice"></div>
+                <p id="rollResult"></p>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <div id="newGame">
+                <button id="newGameBtn">Start a New Game?</button>
+            </div>
+            <div id="giftPass"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <div><a href='mailto:&#103;&#116;&#117;&#098;&#117;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;'>E-mail
+            <i class='far fa-envelope' id='mail'></i></a></div>
+        <div><a href='https://validator.w3.org/check?uri=https://gtubui.github.io/des157a'>Valid HTML</a></div>
+        <div><a href='https://jigsaw.w3.org/css-validator/check/referer'>Valid CSS</a></div>
+    </footer>
+</body>
+</html>
