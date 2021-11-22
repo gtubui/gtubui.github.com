@@ -15,7 +15,7 @@
     var gameData = {
         dice: ['1die.png', '2die.png', '3die.png', '4die.png', '5die.png', '6die.png'],
         villagers: ['sherb.gif'],
-        players: ['player 1', 'player 2'],
+        players: ['Player 1', 'Player 2'],
         score: [0, 0],
         roll1: 0,
         roll2: 0,
@@ -44,7 +44,7 @@
     })
 
     function setUpTurn() {
-        dicePrompt.innerHTML = `<p><i>Roll the dice for ${gameData.players[gameData.index]}</i></p>`;
+        dicePrompt.innerHTML = `<p><i>${gameData.players[gameData.index]}'s turn</i></p>`;
         dice.innerHTML = '';
         rollResult.innerHTML = '';
         giftPass.innerHTML = '<button id="roll">Roll the Dice</button>';
@@ -59,7 +59,6 @@
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
         gameData.roll3 = Math.floor(Math.random() * 6) + 1;
         gameData.roll4 = Math.floor(Math.random() * 6) + 1;
-        dicePrompt.innerHTML = `<p><i>Roll the dice for ${gameData.players[gameData.index]}</i></p>`;
         dice.innerHTML = `<img src="images/${gameData.dice[gameData.roll1-1]}"> <img src="images/${gameData.dice[gameData.roll2-1]}"><br><img src="images/${gameData.dice[gameData.roll3-1]}"> <img src="images/${gameData.dice[gameData.roll4-1]}">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2 + gameData.roll3 + gameData.roll4;
 
