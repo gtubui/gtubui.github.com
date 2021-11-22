@@ -121,8 +121,8 @@
     }
     
     function showCurrentScore() {
-        p1score.innerHTML = `Score: ${gameData.score[0]}`;
-        p2score.innerHTML = `Score: ${gameData.score[1]}`;
+        p1score.innerHTML = `Friends: ${gameData.score[0]}`;
+        p2score.innerHTML = `Friends: ${gameData.score[1]}`;
     }
 
 
