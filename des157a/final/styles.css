@@ -55,12 +55,16 @@ p img {
     width: 100%;
 }
 
-p a {
+figure a {
     color: blue;
 }
 
-p a:hover {
+figure a:hover {
     color: lightblue;
+}
+
+figcaption {
+    text-align: center;
 }
 
 footer {
