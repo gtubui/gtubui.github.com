@@ -1,0 +1,214 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+button {
+    padding: 1% 2% 1% 2%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* page transitions */
+.fadein {
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+    /* HOME PAGE */
+    #homepage {
+        background: lightblue;
+        position: relative;
+        padding-top: 5%;
+        /* width: 1366px; */
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header img {
+        width: 70%;
+    }
+
+    #playerinfo {
+        display: flex;
+        margin: 1.5% 28% 0 28%;
+        width: 50%;
+    }
+
+    .indivplayer {
+        width: 50%;
+    }
+
+    .playerName {
+        padding: 3%;
+
+    }
+
+    .playerName {
+        margin-top: 2%;
+        width: 75%;
+    }
+
+    .playericon {
+        margin: 2% 10% 0 10%;
+        /* transform: scale(1); */
+    }
+
+    #musicdiv {
+        position: relative;
+        margin: 0 0 0 1%;
+        text-align: center;
+    }
+
+    .radio {
+        margin-right: 1%;
+        height: 21px;
+        transform: scale(2);
+    }
+
+    .radio:hover {
+        cursor: pointer;
+    }
+
+    #kazoo {
+        margin-left: 5%;
+    }
+
+    #continue {
+        margin-top: 2.5%;
+        padding-bottom: 7%;
+        text-align: center;
+    }
+
+
+
+
+/* RULES PAGE */
+#rulespage {
+    background: lightgreen;
+    position: absolute;
+    left: 0;
+    /* left: 1367px; */
+    top: 0;
+    padding: 3% 10% 10% 10%;
+}
+
+
+    /* GAME PAGE */
+    #gamepage {
+        background: lightsalmon;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #gamepageheader {
+        display: flex;
+        margin: 1%;
+        margin-left: 3%;
+    }
+
+    h1 img {
+        width: 60%;
+    }
+
+    #rulesBtn, #settingsBtn {
+        color: black;
+        font-size: 60px;
+        margin-top: 3.5%;
+        margin-right: 3%;
+        width: 4.92%;
+        height: 3%;
+    }
+
+    #rulesBtn:hover, #settingsBtn:hover {
+        cursor: pointer;
+    }
+
+    #centralcontent {
+        background: lightgoldenrodyellow;
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    #villager, #playerinteract {
+        width: 50%;
+    }
+
+    #villager {
+        background: pink;
+        position: relative;
+        text-align: center;
+    }
+
+    .villagerName {
+        position: relative;
+        top: 0;
+        text-transform: capitalize;
+    }
+
+    #playerinteract {
+        padding-left: 5%;
+    }
+
+    #score {
+        display: flex;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+
+/* FOOTER */
+footer {
+    font-size: 16px;
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+footer div {
+    margin-right: 5%;
+}
+
+footer div:first-of-type {
+    margin-left: auto;
+    
+}
+
+footer div:last-of-type {
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+

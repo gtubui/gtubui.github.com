@@ -1,0 +1,86 @@
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .2;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    margin-left: 3%;
+}
+
+aside {
+    position: fixed;
+}
+
+#header {
+    margin: 20vh 0 0 0;
+    transform: scale(.7);
+}
+
+#authorinfo {
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#authorinfo h2 {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+#text {
+    margin-top: 5%;
+    margin-left: 45%;
+    line-height: 1.5em;
+    width: 45%;
+}
+
+p {
+    margin-bottom: 10%;
+}
+
+p img {
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+p a {
+    color: blue;
+}
+
+p a:hover {
+    color: lightblue;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0 0 5% 0;
+}
+
+footer div {
+    width: 25vw;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
