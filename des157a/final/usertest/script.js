@@ -55,12 +55,6 @@
         emptyUser();
         isabelleGreeting.innerHTML = `Hello <b>${player1name.value}</b> and <b>${player2name.value}</b>!<br>Welcome to <b>Gift a Villager</b>!<br>I’m Isabelle, and I’ll be explaining the rules to you!`
         footer[0].className = "hidden";
-
-        if (bubblegum.checked) {
-            bubblegumAudio.play();
-        } else {
-            cruisinAudio.play();
-        }
     })
 
     //rulespage start button
@@ -73,6 +67,13 @@
 
         //setup random villager start
         gameData.villagerIndex = Math.floor(Math.random() * 10);
+
+        //background music
+        if (bubblegum.checked) {
+            bubblegumAudio.play();
+        } else {
+            cruisinAudio.play();
+        }
 
         setUpTurn();
     })
