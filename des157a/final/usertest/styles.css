@@ -24,6 +24,18 @@
     opacity: 80%;
 }
 
+#sources {
+    margin: 5%;
+}
+
+#sources a {
+    text-decoration: underline;
+}
+
+#sources a:hover {
+    color: darkgray;
+}
+
 #bg {
     position: fixed;
     top: 0;

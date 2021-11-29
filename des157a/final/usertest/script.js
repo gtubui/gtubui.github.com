@@ -19,6 +19,10 @@
     let footer = document.getElementsByTagName('footer');
     let closeBtn1 = document.getElementById('closeBtn1');
     let closeBtn2 = document.getElementById('closeBtn2');
+    let bubblegum = document.getElementById('bubblegum');
+    let cruisin = document.getElementById('cruisin');
+    let bubblegumAudio = new Audio('sounds/bubblegum.mp3');
+    let cruisinAudio = new Audio('sounds/cruisin.mp3');
     let usertestCloseBtn = document.getElementById('usertestCloseBtn');
 
     let gameData = {
@@ -51,6 +55,12 @@
         emptyUser();
         isabelleGreeting.innerHTML = `Hello <b>${player1name.value}</b> and <b>${player2name.value}</b>!<br>Welcome to <b>Gift a Villager</b>!<br>I’m Isabelle, and I’ll be explaining the rules to you!`
         footer[0].className = "hidden";
+
+        if (bubblegum.checked) {
+            bubblegumAudio.play();
+        } else {
+            cruisinAudio.play();
+        }
     })
 
     //rulespage start button
