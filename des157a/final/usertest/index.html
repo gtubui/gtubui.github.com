@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae2b3ddb63.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Gift A Villager!</title>
+</head>
+<body>
+
+    <section id="homepage">
+        <header><img src="images/header.png" alt="header"></header>
+    
+        <div id="playerinfo">
+            <div class="indivplayer" id="player1div">
+                <label for="player1name">Player 1:</label>
+                <br>
+                <input type="text" class="playerName" id="player1name" placeholder="Timmy">
+                <br>
+                <img class="playericon" src="images/player1.gif" alt="player1">
+            </div>
+            
+            <div class="indivplayer" id="player2div">
+                <label for="player2name">Player 2:</label>
+                <br>
+                <input type="text" class="playerName" id="player2name" placeholder="Tommy">
+                <br>
+                <img class="playericon" src="images/player2.gif" alt="player2">
+            </div>
+        </div>
+
+        <div id="musicdiv">
+            <label for="bubblegum"><input class="radio" type="radio" name="music" id="bubblegum" value="bubblegum" checked>
+                Bubblegum K.K.&nbsp;&nbsp;♬ </label>
+            <label for="cruisin"><input class="radio" type="radio" name="music" id="cruisin" value="cruisin">
+                K.K. Cruisin'&nbsp;&nbsp;♬ </label>
+        </div>
+
+        <div id="continue">
+            <button id="continueBtn">Continue</button>
+        </div>
+    </section>
+
+
+    <section id="rulespage" class="hidden">
+        <img id="isabelle" src="images/isabelle.gif" alt="isabelle">
+
+        <p id="isabellegreeting"></p>
+
+        <p class="rules"><b>Rules of the Game</b>: Players take turns gifting villagers in order to make friends. There are four dice. If you roll 14 or more, the villager becomes your friend and you may roll again. If you roll 12-13, nothing happens. If you roll 6-11, you lose a friend. If you roll 5 or less, you lose all your friends. For all rolls that are 5-15, your turn ends and it becomes the other player’s turn. There is a pass option for if you’re on a friend streak but feel like your luck may be running out. The first to make 5 friends wins!</p>
+
+        <div id="start">
+            <button id="startBtn">Start the Game!</button>
+        </div>
+    </section>
+
+
+    <section id="gamepage" class="hidden">
+        <div id="gamepageheader">
+            <h1><img src="images/header.png" alt="header"></h1>
+            <div id="rulesBtn"><i class="fas fa-info-circle"></i></div>
+            <!-- <div id="settingsBtn"><i class="fas fa-cog"></i></div> -->
+        </div>
+        
+        <div id="centralcontent">
+            <div id="villager"></div>
+
+            <div id="diceButtons">
+                <div id="dice"></div>
+                <div id="giftPass"></div>
+            </div>
+
+            <div id="turnScore">
+                <div id="turnLog">
+                    <h5>Turn Log</h5>
+                    <div id="rollResult"></div>
+                    <div id="turnPrompt"></div>
+                </div>
+                <div id="score">
+                    <h4 id="p1score"></h4>
+                    <h4 id="p2score"></h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="rulesoverlay" class="hidden">
+        <div id="closeBtn1" class="hidden"><i class="fas fa-times"></i></div>
+
+        <img id="nook" src="images/tomnook.gif" alt="tomnook">
+
+        <p id="tomnookgreeting"></p>
+
+        <p class="rules"><b>Rules of the Game</b>: Players take turns gifting villagers in order to make friends. There are four dice. If you roll 14 or more, the villager becomes your friend and you may roll again. If you roll 12-13, nothing happens. If you roll 6-11, you lose a friend. If you roll 5 or less, you lose all your friends. For all rolls that are 5-15, your turn ends and it becomes the other player’s turn. There is a pass option for if you’re on a friend streak but feel like your luck may be running out. The first to make 5 friends wins!</p>
+    </section>
+
+
+    <!-- <section id="settingsoverlay" class="hidden">
+        <div id="closeBtn2" class="hidden"><i class="fas fa-times"></i></div>
+
+        <div id="musicdivOverlay">
+            <label for="bubblegum"><input class="radio" type="radio" name="music" id="bubblegum" value="bubblegum" checked>
+                Bubblegum K.K.&nbsp;&nbsp;♬ </label>
+            <label for="cruisin"><input class="radio" type="radio" name="music" id="cruisin" value="cruisin">
+                K.K. Cruisin'&nbsp;&nbsp;♬ </label>
+        </div>
+
+
+    </section> -->
+
+    <div id="gray">gray</div>
+
+    <section id="usertest">
+        <h3>Hello, thanks for testing my game!</h3>
+        <h4>Tasks:</h4>
+        <ol>
+            <li>Finish a game</li>
+            <li>Open and close the rules on the game page</li>
+            <li>Start a new game after a game finishes</li>
+        </ol>
+
+        <div id="usertestClose">
+            <button id="usertestCloseBtn">close</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div><a href="mailto:&#103;&#116;&#117;&#098;&#117;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">E-mail
+            <i class="far fa-envelope" id="mail"></i></a></div>
+        <div><a href="https://validator.w3.org/check?uri=https://gtubui.github.io/des157a">Valid HTML</a></div>
+        <div><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></div>
+    </footer>
+
+    <img id="bg" src="images/bg.png" alt="background">
+</body>
+</html>

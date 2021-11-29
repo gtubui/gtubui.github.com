@@ -1,0 +1,394 @@
+#usertest {
+    background: beige;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    margin: 10% 5% 10% 22%;
+    padding: 2% 4% 3% 4%;
+    border-radius: 30px;
+}
+
+#usertestClose {
+    text-align: right;
+}
+
+#gray {
+    color: black;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .2;
+}
+
+.bgDiv {
+    background: white;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+button {
+    padding: 1% 3% 1% 3%; 
+}
+
+#rollBtn, #giftBtn, #passBtn, #newGameBtn {
+    padding: 4% 7% 4% 7%; 
+}
+
+#startBtn {
+    padding: 2% 3% 2% 3%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* page transitions */
+.fadein {
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+    /* HOME PAGE */
+    #homepage {
+        /* background: lightblue; */
+        position: relative;
+        padding-top: 5%;
+        /* width: 1366px; */
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header img {
+        width: 70%;
+    }
+
+    #playerinfo {
+        display: flex;
+        margin: 2% 28% 0 28%;
+        width: 50%;
+    }
+
+    .indivplayer {
+        width: 50%;
+    }
+
+    .playerName {
+        padding: 3%;
+    }
+
+    .playerName {
+        margin-top: 2%;
+        width: 75%;
+    }
+
+    .playericon {
+        margin: 10% 10% 0 16%;
+        /* transform: scale(1); */
+    }
+
+    #musicdiv {
+        position: relative;
+        margin: 2% 0 0 1%;
+        text-align: center;
+    }
+
+    .radio {
+        margin-right: 1%;
+        height: 21px;
+        transform: scale(2);
+    }
+
+    .radio:hover {
+        cursor: pointer;
+    }
+
+    #cruisin {
+        margin-left: 5%;
+    }
+
+    #continue {
+        margin-top: 3%;
+        padding-bottom: 7%;
+        text-align: center;
+    }
+
+
+
+
+/* RULES PAGE */
+#rulespage {
+    /* background: lightgreen; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* left: 1367px; */
+    margin-top: 1.5%;
+    padding: 3% 10% 10% 10%;
+}
+
+#isabelle {
+    float: left;
+    margin-right: 2%;
+}
+
+.rules {
+    clear: left;
+    margin-top: 5%;
+}
+
+#start {
+    text-align: right;
+    margin-right: 5%;
+}
+
+
+    /* GAME PAGE */
+    #gamepage {
+        /* background: lightsalmon; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #gamepageheader {
+        display: flex;
+        margin: 1%;
+        /* margin-left: 3%; */
+        margin-left: 6%;
+    }
+
+    h1 img {
+        width: 60%;
+    }
+
+    #rulesBtn, #settingsBtn {
+        color: black;
+        font-size: 60px;
+        margin-top: 3.5%;
+        margin-right: 3%;
+        width: 4.92%;
+        height: 3%;
+    }
+
+    #rulesBtn:hover, #settingsBtn:hover, #closeBtn1:hover, #closeBtn2:hover  {
+        cursor: pointer;
+        color: darkgray;
+    }
+
+    #centralcontent {
+        /* background: lightgoldenrodyellow; */
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    
+
+    #villager {
+        /* background: pink; */
+        position: relative;
+        text-align: center;
+        margin-top: 5%;
+        margin-left: 6%;
+        width: 23%;
+    }
+
+     #diceButtons {
+        width: 37%;
+    }
+
+    #turnScore {
+        width: 40%
+    }
+
+    .villagerName {
+        position: relative;
+        top: 0;
+        text-transform: capitalize;
+        margin-top: 0;
+    }
+
+    #diceButtons {
+        text-align: center;
+        margin-top: 0.5%;
+    }
+
+    #dice {
+        /* text-align: center; */
+        padding: 5% 0 0 0;
+        transform: scale(.8);
+    }
+
+    #rollBtn {
+        
+    }
+
+    #turnScore {
+        /* margin-left: 2%; */
+    }
+
+
+    #turnLog {
+        font-size: 30px;
+        margin-top: 17%;
+        border: 2px dashed black;
+        width: 75%;
+        overflow: hidden;
+    }
+
+    h5 {
+        border-bottom: 2px dashed black;
+        margin: 0;
+        padding: 1% 5% 1% 5%;
+    }
+
+    #rollResult {
+        padding: 0 5% 0 5%;
+    }
+
+    #turnPrompt {
+        padding: 0 5% 3% 5%;
+        line-height: 0;
+    }
+
+    #score {
+        display: flex;
+        
+    }
+
+    #p1score {
+        margin-right: 10%;
+    }
+
+    #winMessage {
+        font-size: 30px;
+    }
+
+    #diceButtons {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    #giftPass {
+        /* margin-top: 0; */
+    }
+
+    #rollBtn {
+         width: 60%;
+    }
+
+    #giftBtn, #passBtn {
+        width: 33%;
+    }
+
+    #giftBtn {
+        margin-right: 3%;
+    }
+
+    #passBtn {
+
+    }
+
+
+#rulesoverlay {
+    background: white;
+    position: absolute;
+    left: 0;
+    /* left: 1367px; */
+    top: 0;
+    margin: 3%;
+    padding: 4% 6% 4% 6%;
+    border-radius: 20px;
+}
+
+#closeBtn1, #closeBtn2 {
+    text-align: right;
+    font-size: 50px;
+}
+
+#nook {
+    float: left;
+    margin-right: 2%;
+}
+
+    #settingsoverlay {
+        background: white;
+        position: absolute;
+        left: 0;
+        /* left: 1367px; */
+        top: 0;
+        margin: 3%;
+        padding: 4% 6% 4% 6%;
+        border-radius: 20px;
+        width: 81%;
+    }
+
+    #musicdivOverlay {
+        display: flex;
+        width: 50%;
+    }
+    
+
+/* FOOTER */
+footer {
+    font-size: 12px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-left: 2%;
+    width: 100%;
+}
+
+footer div {
+    margin-right: 2%;
+}
+
+footer div:last-of-type {
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: darkgray;
+}
+
+
+
+
+
