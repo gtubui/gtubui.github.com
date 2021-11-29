@@ -36,6 +36,15 @@
     color: darkgray;
 }
 
+#backtogame {
+    margin-top: 5%;
+}
+
+#backtogame a {
+    font-size: 24px;
+    text-decoration: none;
+}
+
 #bg {
     position: fixed;
     top: 0;
