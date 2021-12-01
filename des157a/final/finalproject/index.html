@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae2b3ddb63.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Gift A Villager!</title>
+</head>
+<body>
+
+    <section id="homepage">
+        <header><img src="images/header.png" alt="header"></header>
+    
+        <div id="playerinfo">
+            <div class="indivplayer" id="player1div">
+                <label for="player1name">Player 1:</label>
+                <br>
+                <input type="text" class="playerName" id="player1name" placeholder="Timmy">
+                <br>
+                <img class="playericon" src="images/player1.gif" alt="player 1 icon">
+            </div>
+            
+            <div class="indivplayer" id="player2div">
+                <label for="player2name">Player 2:</label>
+                <br>
+                <input type="text" class="playerName" id="player2name" placeholder="Tommy">
+                <br>
+                <img class="playericon" src="images/player2.gif" alt="player 2 icon">
+            </div>
+        </div>
+
+        <div id="musicdiv">
+            <label for="bubblegum"><input class="radio" type="radio" name="music" id="bubblegum" value="bubblegum" checked>
+                Bubblegum K.K.&nbsp;&nbsp;♬ </label>
+            <label for="cruisin"><input class="radio" type="radio" name="music" id="cruisin" value="cruisin">
+                K.K. Cruisin'&nbsp;&nbsp;♬ </label>
+        </div>
+
+        <div id="continue">
+            <button id="continueBtn">Continue</button>
+        </div>
+    </section>
+
+
+    <section id="rulespage" class="hidden">
+        <img id="isabelle" src="images/isabelle.gif" alt="isabelle">
+
+        <p id="isabellegreeting"></p>
+
+        <p id="rules"><b>Rules:</b> At the start of the game, the starting player is randomly chosen. Players take turns gifting villagers in order to make friends. The first to make 7 friends wins!</p>
+
+        <h4 id="legend">Roll effects:</h4>
+        <ul id="ul">
+            <li>14+: You gain a friend and you get to roll again!</li>
+            <li>12-13: Nothing happens and it becomes the other player's turn.</li>
+            <li>6-11: You lose a friend and it becomes the other player's turn.</li>
+            <li>4-5: You lose <u>all</u> of your friends and it becomes the other player's turn.</li>
+        </ul>
+
+        <div id="start">
+            <p id="viewagain"><i>To view the rules during the game, interact with the info button that will be located at the top right of the screen.</i> ☺</p>
+            <button id="startBtn">Start the Game!</button>
+        </div>
+    </section>
+
+
+    <section id="gamepage" class="hidden">
+        <div id="gamepageheader">
+            <h1><img src="images/header.png" alt="header"></h1>
+            <div id="rulesBtn"><i class="fas fa-info-circle"></i></div>
+            <!-- <div id="settingsBtn"><i class="fas fa-cog"></i></div> -->
+        </div>
+        
+        <div id="centralcontent">
+            <div id="villager"></div>
+
+            <div id="diceButtons">
+                <div id="dice"></div>
+                <div id="gift"></div>
+            </div>
+
+            <div id="turnScore">
+                <div id="turnLog">
+                    <h4 id="turnPrompt"></h4>
+                    <div id="rollResult"></div>
+                </div>
+                <div id="score">
+                    <div id="p1score"></div>
+                    <div id="p2score"></div>
+                    <div id="winner"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="rulesoverlay" class="hidden">
+        <div id="closeBtn1" class="hidden"><i class="fas fa-times"></i></div>
+
+        <img id="nook" src="images/tomnook.gif" alt="tomnook">
+
+        <p id="tomnookgreeting"></p>
+
+        <p id="rules2"><b>Rules:</b> At the start of the game, the starting player is randomly chosen. Players take turns gifting villagers in order to make friends. The first to make 7 friends wins!</p>
+
+        <h4 id="legend2">Roll effects:</h4>
+        <ul id="ul2">
+            <li>14+: You gain a friend and you get to roll again!</li>
+            <li>12-13: Nothing happens and it becomes the other player's turn.</li>
+            <li>6-11: You lose a friend and it becomes the other player's turn.</li>
+            <li>4-5: You lose <u>all</u> of your friends and it becomes the other player's turn.</li>
+        </ul>
+    </section>
+
+
+    <!-- <section id="settingsoverlay" class="hidden">
+        <div id="closeBtn2" class="hidden"><i class="fas fa-times"></i></div>
+
+        <div id="musicdivOverlay">
+            <label for="bubblegum"><input class="radio" type="radio" name="music" id="bubblegum" value="bubblegum" checked>
+                Bubblegum K.K.&nbsp;&nbsp;♬ </label>
+            <label for="cruisin"><input class="radio" type="radio" name="music" id="cruisin" value="cruisin">
+                K.K. Cruisin'&nbsp;&nbsp;♬ </label>
+        </div>
+
+
+    </section> -->
+
+
+    <footer>
+        <div><a href="mailto:&#103;&#116;&#117;&#098;&#117;&#105;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">E-mail
+            <i class="far fa-envelope" id="mail"></i></a></div>
+        <div><a href="https://validator.w3.org/check?uri=https://gtubui.github.io/des157a">Valid HTML</a></div>
+        <div><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></div>
+        <div><a href="sources.html">Sources</a></div>
+        <div id="bulby">Thank you <a href="https://www.youtube.com/channel/UCz6zvgkf6eKpgqlUZQstOtQ">Bulby</a> for letting me use your 8-bit remixes!</div>
+    </footer>
+
+    <img id="bg" src="images/bg.png" alt="background">
+</body>
+</html>
