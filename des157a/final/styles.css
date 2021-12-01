@@ -20,6 +20,7 @@ aside {
     position: fixed;
 }
 
+
 #header {
     margin: 20vh 0 0 0;
     transform: scale(.7);
@@ -29,7 +30,7 @@ aside {
     display: flex;
     font-size: 16px;
     text-align: center;
-    padding-left: 20%;
+    padding-left: 18.5%;
     padding-right: 20%;
 }
 
@@ -88,3 +89,50 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* USER TEST RESULTS */
+#resultsaside {
+    left: 0;
+}
+
+#resultsheader {
+    margin: 20vh 0 0 0;
+    transform: scale(.6);
+}
+
+#resultstext {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 45%;
+    line-height: 1.5em;
+    width: 45%;
+}
+
+#testingP {
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 12.5%;
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+ul {
+    margin-top: 1%;
+}
+
+#testconclusion {
+    margin-top: 12.5%;
+    margin-bottom: 0;
+}
+
+ol li {
+    margin-top: 1%;
+}
+
