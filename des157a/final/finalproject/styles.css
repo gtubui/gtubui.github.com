@@ -1,5 +1,6 @@
 #sources {
     margin: 5%;
+    margin-top: 7%;
 }
 
 #sources h4 {
@@ -19,7 +20,7 @@
 #sources p {
     margin: 0;
     font-size: 24px;
-    width: 45%;
+    width: 50%;
 }
 
 #backtogame {
@@ -107,7 +108,7 @@ button:hover {
     /* HOME PAGE */
     #homepage {
         position: relative;
-        padding-top: 5%;
+        padding-top: 6%;
     }
 
     header {
@@ -120,7 +121,7 @@ button:hover {
 
     #playerinfo {
         display: flex;
-        margin: 2% 28% 0 28%;
+        margin: 2.5% 28% 0 28%;
         width: 50%;
     }
 
@@ -139,27 +140,7 @@ button:hover {
     }
 
     .playericon {
-        margin: 10% 10% 0 16%;
-    }
-
-    #musicdiv {
-        position: relative;
-        margin: 2% 0 0 1%;
-        text-align: center;
-    }
-
-    .radio {
-        margin-right: 1%;
-        height: 21px;
-        transform: scale(2);
-    }
-
-    .radio:hover {
-        cursor: pointer;
-    }
-
-    #cruisin {
-        margin-left: 5%;
+        margin: 15% 10% 0 16%;
     }
 
     #continue {

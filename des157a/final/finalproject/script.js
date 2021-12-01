@@ -18,11 +18,7 @@
     let gift = document.getElementById('gift');
     let footer = document.getElementsByTagName('footer');
     let closeBtn1 = document.getElementById('closeBtn1');
-    let closeBtn2 = document.getElementById('closeBtn2');
-    const bubblegum = document.getElementById('bubblegum');
     const bubblegumAudio = new Audio('sounds/bubblegum.mp3');
-    const cruisin = document.getElementById('cruisin');
-    const cruisinAudio = new Audio('sounds/cruisin.mp3');
     const menuselectAudio = new Audio('sounds/menuselect.mp3');
     const startAudio = new Audio('sounds/start.ogg');
 
@@ -41,15 +37,6 @@
         gameEnd: 6
     };
 
-    //audio play for music choices
-    bubblegum.addEventListener('click', function () {
-        menuselectAudio.play();
-    })
-
-    cruisin.addEventListener('click', function() {
-        menuselectAudio.play();
-    })
-
     //homepage continue button
     continueBtn.addEventListener('click', function() {
         menuselectAudio.play();
@@ -64,6 +51,7 @@
     //rulespage start button
     startBtn.addEventListener('click', function() {
         startAudio.play();
+        bubblegumAudio.play();
         document.getElementById('rulespage').className = "hidden"
         document.getElementById('gamepage').className = "fadein"
         footer[0].className = "showing";
@@ -72,13 +60,6 @@
 
         //setup random villager start
         gameData.villagerIndex = Math.floor(Math.random() * 10);
-
-        //background music
-        if (bubblegum.checked) {
-            bubblegumAudio.play();
-        } else {
-            cruisinAudio.play();
-        }
 
         //dice images start on 1die rolls
         dice.innerHTML = `<img src="images/1die.png"> <img src="images/1die.png"> <br> <img src="images/1die.png"> <img src="images/1die.png">`;
@@ -98,11 +79,6 @@
     bubblegumAudio.addEventListener('ended', function() {
         bubblegumAudio.currentTime = 0;
         bubblegumAudio.play();
-    })
-
-    cruisinAudio.addEventListener('ended', function() {
-        cruisinAudio.currentTime = 0;
-        cruisinAudio.play();
     })
     
     //info button for rules
