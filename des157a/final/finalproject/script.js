@@ -8,7 +8,6 @@
     let isabelleGreeting = document.getElementById('isabellegreeting');
     let startBtn = document.getElementById('startBtn');
     let rulesBtn = document.getElementById('rulesBtn');
-    let settingsBtn = document.getElementById('settingsBtn');
     let villager = document.getElementById('villager')
     let p1score = document.getElementById('p1score');
     let p2score = document.getElementById('p2score');
