@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(images/stars.png)
+}
+
+body {
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+    margin: 50px;
+}
+
+body.switch {
+    background-color: rgb(235, 235, 235);
+    color: #333;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+}
+
+#homeflex {
+    display: flex;
+}
+
+h1 {
+    font-family: 'Waterfall', cursive;
+    font-size: 150px;
+    margin: 0;
+    font-weight: normal;
+}
+
+footer h1 {
+    text-align: right;
+}
+
+#buttonblock {
+    text-align: right;
+}
+
+button {
+    padding: 12px;
+    background-color: orange;
+    color: #333;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: rgb(235, 235, 235);
+    border-color: #333;
+}
+
+button.switch:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235)
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    overflow: hidden;
+}
+
+#banner.switch {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+main section {
+    width: 25%;
+    border: 1px rgb(235, 235, 235) dashed;
+    margin: 0 .25em;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: white;
+}
+
+section a:hover {
+    background-color: orange;
+    color: #333;
+}
+
+section.switch a {
+    color: #333;
+}
+
+section.switch a:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+}
+
