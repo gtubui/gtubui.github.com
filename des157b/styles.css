@@ -175,7 +175,7 @@ section.switch a:hover {
     height: 50px;
     width: 50px;
     transform: rotate(-45deg);
-    animation: shoot 1s ease-in-out infinite;
+    animation: shoot 2s ease-in-out infinite;
     filter: drop-shadow(0 0 10px rgba(105, 155,255,1));
 }
 
