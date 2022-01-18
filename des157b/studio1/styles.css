@@ -1,0 +1,75 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+section {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 2% 5% 2% 5%;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    color: gold;
+}
+
+
+/* typing animation */
+.typing1 {
+    overflow: hidden; /* hides sentence after type-cursor */
+    border-right: .12em solid transparent; /* controls appearance of type-cursor */
+    margin: 0 auto; /* controls text position and typing effect */
+    white-space: nowrap; /* keeps sentence in one line */
+    animation: typing 3s steps(34, end), type-cursor .8s step-end 5;
+}
+
+.typing2 {
+    overflow: hidden; 
+    border-right: .12em solid transparent; 
+    margin: 7% 0 5% auto; 
+    white-space: nowrap; 
+    animation: typing 3s steps(23, end), type-cursor .8s step-end 6;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+  
+@keyframes type-cursor {
+    0% { border-color: transparent; }
+    50% { border-color: goldenrod; }
+    100% { border-color: transparent; }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+/* loading icon */
+.fa-cloud-moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36px;
+    color: whitesmoke;
+    transform: translate(-50%, -50%);
+    animation: load 1s infinite alternate ease-in-out;
+}
+
+@keyframes load {
+    from {
+        opacity: .5;
+        transform: scale(1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
