@@ -194,7 +194,7 @@ section.switch a:hover {
     border-right: 10px solid red;
     border-bottom: 5px solid transparent;
     transform: rotate(-45deg);
-    animation: shoot2 1s ease-in-out infinite;
+    animation: shoot2 2s ease-in-out infinite;
 }
 
 
