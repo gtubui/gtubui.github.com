@@ -60,7 +60,7 @@ section {
     font-size: 36px;
     color: whitesmoke;
     transform: translate(-50%, -50%);
-    animation: load 1s infinite alternate ease-in-out;
+    animation: load 2s infinite alternate ease-in-out;
 }
 
 @keyframes load {
