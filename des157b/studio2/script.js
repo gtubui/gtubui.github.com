@@ -38,6 +38,7 @@
         expand[6].style.width = '10%';
         expand[7].style.width = '10%';
         expand[0].style.backgroundImage = 'url(images/1.png)';
+        // h2[0].className = 'showing';
     })
 
     button[1].addEventListener('click', function() {
