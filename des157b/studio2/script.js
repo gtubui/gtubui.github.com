@@ -6,12 +6,27 @@
     const expand = document.querySelectorAll('.expand');
     const main = document.querySelector('main');
     const p = document.querySelectorAll('p');
+    const aside = document.querySelector('aside');
+    const info = document.querySelector('.fa-question-circle');
+    const close = document.querySelector('.fa-times-circle');
+    const h2 = document.getElementsByTagName('h2');
+    const h3 = document.getElementsByTagName('h3');
 
-    // async function getData() {
-    //     const dc = await fetch('data/dc.json');
-    //     const data = await dc.json();
-    //     console.log(data); 
-    // }
+    async function getData() {
+        const dc = await fetch('data/dc.json');
+        const data = await dc.json();
+        console.log(data); 
+    }
+
+    getData();
+
+    info.addEventListener('click', function() {
+        aside.className = 'showing';
+    })
+
+    close.addEventListener('click', function() {
+        aside.className = 'hidden';
+    })
 
     button[0].addEventListener('click', function() {
         expand[0].style.width = '30%';
