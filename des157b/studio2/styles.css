@@ -29,6 +29,21 @@ div:last-of-type {
     border-right: none;
 }
 
+h2 {
+    margin-top: 100%;
+}
+
+h2, h3 {
+    color: gold;
+    font-size: 36px;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+h2, h3 {
+    line-height: .5em;
+}
+
 button {
     color: white;
     background-color: rgba(138,43,43,0);
@@ -80,7 +95,6 @@ aside {
     border-radius: 10px;
     background-color: rgba(16,24,32,0.75);
     width: 20%;
-    
 }
 
 .fa-question-circle {
@@ -106,8 +120,13 @@ aside {
     display: none;
 }
 
+@keyframes fadein {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
 
-/* sources */
+
+/* sources page */
 a {
     color: white;
     text-decoration: none;
@@ -127,9 +146,4 @@ ol {
 #back {
     font-size: 30px;
     margin-left: 5%;
-}
-
-@keyframes fadein {
-    from { opacity: 0%; }
-    to { opacity: 100%; }
 }

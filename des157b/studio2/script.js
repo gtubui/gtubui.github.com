@@ -4,8 +4,6 @@
 
     const button = document.querySelectorAll('button');
     const expand = document.querySelectorAll('.expand');
-    const main = document.querySelector('main');
-    const p = document.querySelectorAll('p');
     const aside = document.querySelector('aside');
     const info = document.querySelector('.fa-question-circle');
     const close = document.querySelector('.fa-times-circle');
@@ -20,99 +18,19 @@
         aside.className = 'hidden';
     })
 
-    button[0].addEventListener('click', function() {
-        expand[0].style.width = '30%';
-        expand[1].style.width = '10%';
-        expand[2].style.width = '10%';
-        expand[3].style.width = '10%';
-        expand[4].style.width = '10%';
-        expand[5].style.width = '10%';
-        expand[6].style.width = '10%';
-        expand[7].style.width = '10%';
-        expand[0].style.backgroundImage = 'url(images/1.png)';
-    })
-
-    button[1].addEventListener('click', function() {
-        expand[0].style.width = '10%';
-        expand[1].style.width = '30%';
-        expand[2].style.width = '10%';
-        expand[3].style.width = '10%';
-        expand[4].style.width = '10%';
-        expand[5].style.width = '10%';
-        expand[6].style.width = '10%';
-        expand[7].style.width = '10%';
-        expand[1].style.backgroundImage = 'url(images/2.png)';
-    })
-
-    button[2].addEventListener('click', function() {
-        expand[0].style.width = '10%';
-        expand[1].style.width = '10%';
-        expand[2].style.width = '30%';
-        expand[3].style.width = '10%';
-        expand[4].style.width = '10%';
-        expand[5].style.width = '10%';
-        expand[6].style.width = '10%';
-        expand[7].style.width = '10%';
-        expand[2].style.backgroundImage = 'url(images/3.png)';
-    })
-
-    button[3].addEventListener('click', function() {
-        expand[0].style.width = '10%';
-        expand[1].style.width = '10%';
-        expand[2].style.width = '10%';
-        expand[3].style.width = '30%';
-        expand[4].style.width = '10%';
-        expand[5].style.width = '10%';
-        expand[6].style.width = '10%';
-        expand[7].style.width = '10%';
-        expand[3].style.backgroundImage = 'url(images/4.png)';
-    })
-
-    button[4].addEventListener('click', function() {
-        expand[0].style.width = '10%';
-        expand[1].style.width = '10%';
-        expand[2].style.width = '10%';
-        expand[3].style.width = '10%';
-        expand[4].style.width = '30%';
-        expand[5].style.width = '10%';
-        expand[6].style.width = '10%';
-        expand[7].style.width = '10%';
-        expand[4].style.backgroundImage = 'url(images/5.png)';
-    })
-
-    button[5].addEventListener('click', function() {
-        expand[0].style.width = '10%';
-        expand[1].style.width = '10%';
-        expand[2].style.width = '10%';
-        expand[3].style.width = '10%';
-        expand[4].style.width = '10%';
-        expand[5].style.width = '30%';
-        expand[6].style.width = '10%';
-        expand[7].style.width = '10%';
-        expand[5].style.backgroundImage = 'url(images/6.png)';
-    })
-
-    button[6].addEventListener('click', function() {
-        expand[0].style.width = '10%';
-        expand[1].style.width = '10%';
-        expand[2].style.width = '10%';
-        expand[3].style.width = '10%';
-        expand[4].style.width = '10%';
-        expand[5].style.width = '10%';
-        expand[6].style.width = '30%';
-        expand[7].style.width = '10%';
-        expand[6].style.backgroundImage = 'url(images/7.png)';
-    })
-
-    button[7].addEventListener('click', function() {
-        expand[0].style.width = '10%';
-        expand[1].style.width = '10%';
-        expand[2].style.width = '10%';
-        expand[3].style.width = '10%';
-        expand[4].style.width = '10%';
-        expand[5].style.width = '10%';
-        expand[6].style.width = '10%';
-        expand[7].style.width = '30%';
-        expand[7].style.backgroundImage = 'url(images/8.png)';
-    })
+    for (let x = 0; x < expand.length; x++) {
+        button[x].addEventListener('click', function() {
+            for(let y = 0; y < expand.length; y++) {
+                if (y != x) {
+                    expand[y].style.width = '10%';
+                    h2[y].className = 'hidden';
+                    h3[y].className = 'hidden';
+                    expand[x].style.width = '30%';
+                    expand[x].style.backgroundImage = `url(images/${x}.png`;
+                    h2[x].className = 'showing';
+                    h3[x].className = 'showing';
+                }
+            }
+        })
+    }
 })();
