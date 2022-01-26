@@ -46,7 +46,7 @@ h2, h3 {
 
 button {
     color: white;
-    background-color: rgba(138,43,43,0);
+    background-color: rgba(138,43,43,.3);
     text-align: center;
     font-size: 30px;
     margin-top: 200%;
