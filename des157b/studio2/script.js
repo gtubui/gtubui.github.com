@@ -12,14 +12,6 @@
     const h2 = document.getElementsByTagName('h2');
     const h3 = document.getElementsByTagName('h3');
 
-    async function getData() {
-        const dc = await fetch('data/dc.json');
-        const data = await dc.json();
-        console.log(data); 
-    }
-
-    getData();
-
     info.addEventListener('click', function() {
         aside.className = 'showing';
     })
@@ -38,7 +30,6 @@
         expand[6].style.width = '10%';
         expand[7].style.width = '10%';
         expand[0].style.backgroundImage = 'url(images/1.png)';
-        // h2[0].className = 'showing';
     })
 
     button[1].addEventListener('click', function() {
