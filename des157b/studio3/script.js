@@ -38,7 +38,7 @@
   const FACING_RIGHT = 0;
   const FACING_LEFT = 1;
   const FRAME_LIMIT = 3; // speed at which frames cycle
-  const MOVEMENT_SPEED = 2; // speed at which character walks
+  const MOVEMENT_SPEED = 3; // speed at which character walks
   const TUTORIAL = document.querySelector('#tutorial');
   const TUTORIAL2 = document.querySelector('#tutorial2');
   const TEXTBOXCONTAINER = document.querySelector('#textboxContainer');
