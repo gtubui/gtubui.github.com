@@ -6,7 +6,7 @@
 
         const masonry = new Masonry(container, {
             itemSelector: '.grid-item',
-            gutter: 6.5,
+            gutter: 7,
         });
     }
 })()

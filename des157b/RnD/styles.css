@@ -16,7 +16,7 @@ html {
 }
 
 #visual body {
-    height: 150vh;
+    height: 170vh;
 }
 
 body {
@@ -154,12 +154,12 @@ p {
 }
 
 #container {
-    margin-left: 5.4%;
+    margin-left: 0.4%;
     margin-bottom: 5%;
 }
 
 .grid-item {
-    width: 31%;
+    width: 33%;
 }
 
 img {
@@ -177,7 +177,7 @@ img {
 #sourcesLink {
     position: absolute;
     right: 6.9%;
-    bottom: -52%;
+    bottom: -70%;
 }
 
 #sources h1 {

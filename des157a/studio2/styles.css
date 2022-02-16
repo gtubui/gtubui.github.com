@@ -7,11 +7,6 @@ html {
     cursor: default;
 }
 
-html, body {
-    /* overscroll-behavior: none; */
-    /* causes css validation error */
-}
-
 h1 {
     font-family: 'Amatic SC', cursive;
     font-size: 150px;
