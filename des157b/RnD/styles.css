@@ -3,7 +3,7 @@ html {
     overflow: hidden;
 }
 
-#analysis, #storyboard, #brief, #visual {
+#analysis, #storyboard, #brief, #visual, #flows {
     overflow: visible;
 }
 
@@ -17,6 +17,10 @@ html {
 
 #visual body {
     height: 170vh;
+}
+
+#flows body {
+    height: 315vh;
 }
 
 body {
@@ -196,4 +200,28 @@ img {
 
 #sources li {
     margin-bottom: 2%;
+}
+
+#flows #lineDeco {
+    width: 80%;
+}
+
+#flowsImg {
+    width: 90%;
+    margin: auto;
+}
+
+#report ul {
+    display: block;
+    margin-left: 2%;
+}
+
+#report li {
+    margin-left: 5%;
+    width: 90%;
+}
+
+#report p {
+    margin-left: 5%;
+    width: 50%;
 }
