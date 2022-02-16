@@ -3,7 +3,7 @@ html {
     overflow: hidden;
 }
 
-#analysis, #storyboard, #brief {
+#analysis, #storyboard, #brief, #visual {
     overflow: visible;
 }
 
@@ -13,6 +13,10 @@ html {
 
 #storyboard body {
     height: 125vh;
+}
+
+#visual body {
+    height: 150vh;
 }
 
 body {
@@ -146,12 +150,50 @@ p {
 }
 
 #visual #lineDeco {
-    width: 66%;
+    width: 67.5%;
 }
 
-.container {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    grid-template-rows: masonry;
-  }
+#container {
+    margin-left: 5.4%;
+    margin-bottom: 5%;
+}
+
+.grid-item {
+    width: 31%;
+}
+
+img {
+    width: 100%;
+}
+
+#visual #sources {
+    color: blue;
+}
+
+#visual #sources:hover {
+    color: purple;
+}
+
+#sourcesLink {
+    position: absolute;
+    right: 6.9%;
+    bottom: -52%;
+}
+
+#sources h1 {
+    margin-bottom: 4%;
+}
+
+#sources #lineDeco {
+    width: 76.5%;
+}
+
+#sources ul {
+    display: block;
+    margin-top: 0;
+    margin-left: 5%;
+}
+
+#sources li {
+    margin-bottom: 2%;
+}
