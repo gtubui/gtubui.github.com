@@ -17,6 +17,10 @@ body {
     margin: auto;
 }
 
+.footercontainer {
+    display: flex;
+}
+
 header, footer {
     background: rgb(153,233,5);
     background: linear-gradient(157deg, rgba(153,233,5,1) 0%, rgba(245,251,114,1) 100%);
