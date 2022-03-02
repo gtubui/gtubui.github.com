@@ -24,8 +24,9 @@
     margin-top: 20%;
 }
 
-#dialoguebox {
+.dialoguebox {
     display: flex;
+    overflow: hidden;
     background-color: rgba(255,255,255,0.7);
     margin: 5% 15% 5% 15%;
     border: 5px ridge black;
@@ -42,21 +43,21 @@
     margin-left: 5%;
 }
 
-#text1, #text2, #text3, #text4 {
+#text1a, #text1b, #text1c, #text1d, #text2, #text3, #text4 {
     position: absolute;
-    margin-top: 2%;
+    top: 100px;
     width: 40%;
     height: 30%;
 }
 
-#buttons {
+#buttons1, #buttons2 {
     position: absolute;
     top: 200px;
     width: 50%;
     height: 9%;
 }
 
-#buttons button {
+#buttons1 button, #buttons2 button {
     padding: 2% 3% 2% 3%;
     /* border: none; */
     /* background-color: yellow; */
@@ -89,7 +90,7 @@ button:hover {
     padding: 1%;
 }
 
-#submitpage button {
+#submit {
     position: absolute;
     top: 250px;
     width: 30%;

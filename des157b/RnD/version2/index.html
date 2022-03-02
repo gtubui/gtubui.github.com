@@ -18,11 +18,14 @@
     <div id="tutorial">Move with [A] [D] or [<i class="fas fa-arrow-left"></i>] [<i class="fas fa-arrow-right"></i>]</div>
     <div id="tutorial2" class="hidden">Press [Enter] to interact.</div>
     <div id="dialogueContainer1" class="hidden">
-        <div id="dialoguebox">
+        <div class="dialoguebox">
             <div><img class="portrait" src="images/portrait1.png" alt="npc 1 portrait"></div>
             <div class="textblock">
-                <div id="text1"></div>
-                <div id="buttons">
+                <div id="text1a"></div>
+                <div id="text1b"></div>
+                <div id="text1c"></div>
+                <div id="text1d"></div>
+                <div id="buttons1">
                     <button id="yes1">Yes!</button>
                     <button id="no1">No thanks.</button>
                 </div>
@@ -34,18 +37,18 @@
                 </div>
                 <div id="submitpage" class="hidden">
                     <input type="text" id="sign" name="sign" placeholder="Sign here." autocomplete="off">
-                    <button id="submit">Submit your reponse!</button>
+                    <input type="submit" id="submit" value="Submit your reponse!">
                 </div>
             </div>
         </div>
     </div>
 
     <div id="dialogueContainer2" class="hidden">
-        <div id="dialoguebox">
+        <div class="dialoguebox">
             <div><img class="portrait" src="images/portrait2.png" alt="npc 2 portrait"></div>
             <div class="textblock">
                 <div id="text2"></div>
-                <div id="buttons">
+                <div id="buttons2">
                     <button id="yes2">Yes, please!</button>
                     <button id="no2">No thanks.</button>
                 </div>
@@ -62,6 +65,6 @@
     <div id="npc4"><img src="images/npc4.png" alt="npc 4"></div>
     <canvas width="1366" height="200"></canvas>
     <footer><a href="sources.html">Sources</a></footer>
-    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 </body>
 </html>

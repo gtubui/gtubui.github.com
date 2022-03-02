@@ -9,11 +9,14 @@
   function textBubble() {
     const dialogueContainer1 = document.querySelector('#dialogueContainer1');
     const dialogueContainer2 = document.querySelector('#dialogueContainer2');
-    const text1 = document.querySelector('#text1');
+    const text1a = document.querySelector('#text1a');
+    const text1b = document.querySelector('#text1b');
+    const text1c = document.querySelector('#text1c');
+    const text1d = document.querySelector('#text1d');
     const text2 = document.querySelector('#text2');
     const text3 = document.querySelector('#text3');
     const text4 = document.querySelector('#text4');
-    const buttons1 = document.querySelector('#buttons');
+    const buttons1 = document.querySelector('#buttons1');
     const yesBtn1 = document.querySelector('#yes1');
     const noBtn1 = document.querySelector('#no1');
     const yesBtn2 = document.querySelector('#yes2');
@@ -24,35 +27,55 @@
     const submitPage = document.querySelector('#submitpage');
     const submitBtn = document.querySelector('#submit');
     // let response = document.querySelector('#response');
+    const inputs = document.querySelectorAll('#dialogueContainer2 input:not([type=submit])');
+
     
 
     let npc1Initial = true;
-    if (keyPresses.Enter && positionX > 440 && positionX < 569) {
+    if (keyPresses.Enter && positionX > 440 && positionX < 569 && npc1Initial) {
       dialogueContainer1.className = 'showing';
       dialogueContainer2.className = 'hidden'; 
       tutorial2.className = 'hidden'; 
       buttons1.className = 'showing'
       npc1Initial = false;
 
-      const TYPEWRITER1 = new Typewriter(text1, {
-      loop: false,
-      delay: 30,
-      cursor: null,
+      const TYPEWRITER1A = new Typewriter(text1a, {
+        loop: false,
+        delay: 30,
+        cursor: null,
       });
 
-      TYPEWRITER1
+      const TYPEWRITER1B = new Typewriter(text1b, {
+        loop: false,
+        delay: 30,
+        cursor: null,
+      });
+
+      const TYPEWRITER1C = new Typewriter(text1c, {
+        loop: false,
+        delay: 30,
+        cursor: null,
+      });
+
+      const TYPEWRITER1D = new Typewriter(text1d, {
+        loop: false,
+        delay: 30,
+        cursor: null,
+      });
+
+      TYPEWRITER1A
       .typeString('Hello! ')
       .pauseFor(600)
       .typeString('Would you like to submit a response? ')
       .start();
 
       yesBtn1.addEventListener('click', function() {
-        // text1.innerHTML = ''
+        text1a.className = 'hidden'
+        text1b.className = 'showing'
         buttons1.className = 'hidden'
         responseField.className = 'showing'
-
-        TYPEWRITER1
-        .deleteAll()
+          
+        TYPEWRITER1B
         .typeString('Great! ')
         .pauseFor(600)
         .typeString('Please answer this question: ')
@@ -72,9 +95,10 @@
 
       nextBtn.addEventListener('click', function () {
         if(response.value !='') {
-          TYPEWRITER1
-          .deleteAll()
-          .typeString('Sign your name here or leave the field empty to remain anonymous.')
+          text1b.className = 'hidden'
+          text1c.className = 'showing'
+          TYPEWRITER1C
+          .typeString('Sign your name or leave the field empty to remain anonymous.')
           .start();
           responseField.className = 'hidden';
           submitPage.className = 'showing';
@@ -85,27 +109,34 @@
       })
 
       submitBtn.addEventListener('click', function(event) {
-        event.preventDefault();
+        // event.preventDefault();
         submitResponse();
       })  
 
       async function submitResponse() {
         const newResponse = {};
+
+        for (let i=0; i<inputs.length; i++) {
+          let key = inputs[i].getAttribute('name');
+          let value = inputs[i].value;
+          newResponse[key] = value;
+        }
   
-        if(newResponse.responses !='') {
+        if(newResponse.response != '') {
           const newResponseData = new Parse.Object('Responses');
-          newResponseData.set ('responses', newResponse.response);
-          newResponseData.set ('sign', newResponse.sign)
-          if(newResponse.sign =='') {
+          newResponseData.set('response', newResponse.response);
+          newResponseData.set('sign', newResponse.sign);
+          if(newResponse.sign == '') {
             newResponse.sign = 'Anonymous'
           }
           try {
             const result = await newResponseData.save();
             console.log('response created', result);
-            resetFormFields();
+            // resetFormFields();
             submitPage.className = 'hidden';
-            TYPEWRITER1
-            .deleteAll()
+            text1c.className = 'hidden';
+            text1d.className = 'showing';
+            TYPEWRITER1D
             .typeString('Your response has been recorded. :) ')
             .start();
             // responseSuccess.className = 'showing';
@@ -121,21 +152,21 @@
       }
     } 
 
-    // (async () => {
-    //   const Responses = Parse.Object.extend('Responses');
-    //   const query = new Parse.Query(Responses);
-    //   try {
-    //       const results = await query.find();
-    //       for (const object of results) {
-    //           const response = object.get('response')
-    //           const sign = object.get('sign')
-    //           console.log(response);
-    //           console.log(sign);
-    //       }
-    //   } catch(error) {
-    //       console.error('Error while fetching Responses', error);
-    //   }
-    // })
+    (async () => {
+      const Responses = Parse.Object.extend('Responses');
+      const query = new Parse.Query(Responses);
+      try {
+          const results = await query.find();
+          for (const object of results) {
+              const response = object.get('response')
+              const sign = object.get('sign')
+              console.log(response);
+              console.log(sign);
+          }
+      } catch(error) {
+          console.error('Error while fetching Responses', error);
+      }
+    })
 
     if (keyPresses.Enter && positionX > 570 && positionX < 699) {
       dialogueContainer2.className = 'showing';
