@@ -5,168 +5,57 @@
   Parse.initialize('x3kjJoazxO1qh4Jxsrvd6OciU1cG1Xf98l8la2aT','acqlo6WFXsQHH3ezFWoDqYK82Tg4hrstcghrt5U4'); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
   Parse.serverURL = 'https://parseapi.back4app.com/'
   
-  // DIALOGUE
+  const dialogueContainer1 = document.querySelector('#dialogueContainer1');
+  const dialogueContainer2 = document.querySelector('#dialogueContainer2');
+  const text1a = document.querySelector('#text1a');
+  const text1b = document.querySelector('#text1b');
+  const text1c = document.querySelector('#text1c');
+  const text1d = document.querySelector('#text1d');
+  const text2 = document.querySelector('#text2');
+  const text3 = document.querySelector('#text3');
+  const text4 = document.querySelector('#text4');
+  const buttons1 = document.querySelector('#buttons1');
+  const yesBtn1 = document.querySelector('#yes1');
+  const noBtn1 = document.querySelector('#no1');
+  const yesBtn2 = document.querySelector('#yes2');
+  const noBtn2 = document.querySelector('#no2');
+  const responseField = document.querySelector('#responsefield');
+  const nextBtn = document.querySelector('#next');
+  const cancelBtn = document.querySelector('#cancel');
+  const submitPage = document.querySelector('#submitpage');
+  const submitBtn = document.querySelector('#submit');
+  const closeWindow = document.querySelector('#submitted');
+  const closeBtn = document.querySelector('#close');
+  const inputs = document.querySelectorAll('#dialogueContainer1 input:not([type=submit])');
+
+////////// DIALOGUE //////////
   function textBubble() {
-    const dialogueContainer1 = document.querySelector('#dialogueContainer1');
-    const dialogueContainer2 = document.querySelector('#dialogueContainer2');
-    const text1a = document.querySelector('#text1a');
-    const text1b = document.querySelector('#text1b');
-    const text1c = document.querySelector('#text1c');
-    const text1d = document.querySelector('#text1d');
-    const text2 = document.querySelector('#text2');
-    const text3 = document.querySelector('#text3');
-    const text4 = document.querySelector('#text4');
-    const buttons1 = document.querySelector('#buttons1');
-    const yesBtn1 = document.querySelector('#yes1');
-    const noBtn1 = document.querySelector('#no1');
-    const yesBtn2 = document.querySelector('#yes2');
-    const noBtn2 = document.querySelector('#no2');
-    const responseField = document.querySelector('#responsefield');
-    const nextBtn = document.querySelector('#next');
-    const cancelBtn = document.querySelector('#cancel');
-    const submitPage = document.querySelector('#submitpage');
-    const submitBtn = document.querySelector('#submit');
-    // let response = document.querySelector('#response');
-    const inputs = document.querySelectorAll('#dialogueContainer2 input:not([type=submit])');
-
-    
-
-    let npc1Initial = true;
-    if (keyPresses.Enter && positionX > 440 && positionX < 569 && npc1Initial) {
+    // let npc1Initial = true;
+    if (keyPresses.Enter && positionX > 440 && positionX < 569) {
+      tutorial2.className = 'hidden'; 
+      tutorial3.className = 'showing'; 
       dialogueContainer1.className = 'showing';
       dialogueContainer2.className = 'hidden'; 
-      tutorial2.className = 'hidden'; 
-      buttons1.className = 'showing'
-      npc1Initial = false;
-
+      responseField.className = 'hidden';
+      submitPage.className = 'hidden';
+      closeWindow.className = 'hidden'
+      buttons1.className = 'showing';
+      text1a.className = 'showing';
+      text1b.className = 'hidden';
+      text1c.className = 'hidden';
+      text1d.className = 'hidden';
+      // npc1Initial = false;
       const TYPEWRITER1A = new Typewriter(text1a, {
         loop: false,
         delay: 30,
         cursor: null,
       });
-
-      const TYPEWRITER1B = new Typewriter(text1b, {
-        loop: false,
-        delay: 30,
-        cursor: null,
-      });
-
-      const TYPEWRITER1C = new Typewriter(text1c, {
-        loop: false,
-        delay: 30,
-        cursor: null,
-      });
-
-      const TYPEWRITER1D = new Typewriter(text1d, {
-        loop: false,
-        delay: 30,
-        cursor: null,
-      });
-
       TYPEWRITER1A
       .typeString('Hello! ')
       .pauseFor(600)
       .typeString('Would you like to submit a response? ')
       .start();
-
-      yesBtn1.addEventListener('click', function() {
-        text1a.className = 'hidden'
-        text1b.className = 'showing'
-        buttons1.className = 'hidden'
-        responseField.className = 'showing'
-          
-        TYPEWRITER1B
-        .typeString('Great! ')
-        .pauseFor(600)
-        .typeString('Please answer this question: ')
-        .pauseFor(600)
-        .typeString('What is love to you?')
-        .start();
-      })
-
-      noBtn1.addEventListener('click', function() {
-        dialogueContainer1.className = 'hidden';
-      })
-
-      cancel.addEventListener('click', function() {
-        dialogueContainer1.className = 'hidden';
-        responseField.className = 'hidden';
-      })
-
-      nextBtn.addEventListener('click', function () {
-        if(response.value !='') {
-          text1b.className = 'hidden'
-          text1c.className = 'showing'
-          TYPEWRITER1C
-          .typeString('Sign your name or leave the field empty to remain anonymous.')
-          .start();
-          responseField.className = 'hidden';
-          submitPage.className = 'showing';
-        } else {
-          response.placeholder = 'Type something!';
-          response.style.borderColor = 'red';
-        }
-      })
-
-      submitBtn.addEventListener('click', function(event) {
-        // event.preventDefault();
-        submitResponse();
-      })  
-
-      async function submitResponse() {
-        const newResponse = {};
-
-        for (let i=0; i<inputs.length; i++) {
-          let key = inputs[i].getAttribute('name');
-          let value = inputs[i].value;
-          newResponse[key] = value;
-        }
-  
-        if(newResponse.response != '') {
-          const newResponseData = new Parse.Object('Responses');
-          newResponseData.set('response', newResponse.response);
-          newResponseData.set('sign', newResponse.sign);
-          if(newResponse.sign == '') {
-            newResponse.sign = 'Anonymous'
-          }
-          try {
-            const result = await newResponseData.save();
-            console.log('response created', result);
-            // resetFormFields();
-            submitPage.className = 'hidden';
-            text1c.className = 'hidden';
-            text1d.className = 'showing';
-            TYPEWRITER1D
-            .typeString('Your response has been recorded. :) ')
-            .start();
-            // responseSuccess.className = 'showing';
-          } catch (error) {
-            console.error('Error while creating response: ', error)
-          }
-        } 
-      }
-
-      function resetFormFields() {
-        response.value = '';
-        sign.value = '';
-      }
     } 
-
-    (async () => {
-      const Responses = Parse.Object.extend('Responses');
-      const query = new Parse.Query(Responses);
-      try {
-          const results = await query.find();
-          for (const object of results) {
-              const response = object.get('response')
-              const sign = object.get('sign')
-              console.log(response);
-              console.log(sign);
-          }
-      } catch(error) {
-          console.error('Error while fetching Responses', error);
-      }
-    })
 
     if (keyPresses.Enter && positionX > 570 && positionX < 699) {
       dialogueContainer2.className = 'showing';
@@ -198,15 +87,125 @@
       tutorial2.className = 'hidden'; 
     }
     if (keyPresses.Enter && positionX > 1050 && positionX < 1179) {
-      dialogueContainer3.className = 'showing'; 
+      dialogueContainer4.className = 'showing'; 
       tutorial2.className = 'hidden'; 
     }
     
   }
 
-  
 
-  // CHARACTER MOVEMENT
+////////// NPC1 DATA COLLECTION //////////
+  yesBtn1.addEventListener('click', function() {
+    tutorial3.className = 'hidden'; 
+    text1a.className = 'hidden'
+    text1b.className = 'showing'
+    buttons1.className = 'hidden'
+    responseField.className = 'showing'
+    const TYPEWRITER1B = new Typewriter(text1b, {
+      loop: false,
+      delay: 30,
+      cursor: null,
+    });
+    TYPEWRITER1B
+    .typeString('Great! ')
+    .pauseFor(600)
+    .typeString('Please answer this question: ')
+    .pauseFor(600)
+    .typeString('What is love to you?')
+    .start();
+  })
+
+  noBtn1.addEventListener('click', function() {
+    dialogueContainer1.className = 'hidden';
+  })
+
+  cancelBtn.addEventListener('click', function() {
+    dialogueContainer1.className = 'hidden';
+    responseField.className = 'hidden';
+  })
+
+  nextBtn.addEventListener('click', function () {
+    if(response.value !='') {
+      text1b.className = 'hidden'
+      text1c.className = 'showing'
+      const TYPEWRITER1C = new Typewriter(text1c, {
+        loop: false,
+        delay: 30,
+        cursor: null,
+      });
+      TYPEWRITER1C
+      .typeString('Sign your name or leave the field empty to remain anonymous.')
+      .start();
+      responseField.className = 'hidden';
+      submitPage.className = 'showing';
+    } else {
+      response.placeholder = 'Type something!';
+      response.style.borderColor = 'red';
+    }
+  })
+
+  submitBtn.addEventListener('click', function(event) {
+    // event.preventDefault();
+    submitResponse();
+  })
+
+  closeBtn.addEventListener('click', function() {
+    dialogueContainer1.className = 'hidden';
+    closeWindow.className = 'hidden'
+  })
+  
+  async function submitResponse() {
+    const newResponse = {};
+
+    for (let i=0; i<inputs.length; i++) {
+      let key = inputs[i].getAttribute('name');
+      let value = inputs[i].value;
+      newResponse[key] = value;
+    }
+
+    if(newResponse.response != '') {
+      const newResponseData = new Parse.Object('Responses');
+      newResponseData.set('response', newResponse.response);
+      newResponseData.set('sign', newResponse.sign);
+      try {
+        if(sign.value == '') {
+          sign.value = 'Anonymous'
+          newResponse.sign = 'Anonymous'
+        }
+        const result = await newResponseData.save();
+        // console.log('response created', result);
+        resetFormFields();
+        submitPage.className = 'hidden';
+        text1c.className = 'hidden';
+        text1d.className = 'showing';
+        closeWindow.className = 'showing';
+        const TYPEWRITER1D = new Typewriter(text1d, {
+          loop: false,
+          delay: 30,
+          cursor: null,
+        });
+        TYPEWRITER1D
+        .typeString('Your response has been recorded!')
+        .start();
+      } catch (error) {
+        console.error('Error while creating response: ', error)
+      }
+    } 
+    console.log(newResponse.sign);
+  }
+
+  function resetFormFields() {
+    response.value = '';
+    sign.value = '';
+  }
+
+
+
+
+
+
+
+////////// CHARACTER MOVEMENT //////////
   const scale = 1; // **make sure to adjust canvas height in html too
   const width = 140; // width of each frame in spritesheet
   const height = 140; // height of each frame in spritesheet
@@ -219,6 +218,7 @@
   const movement_speed = 10; // speed at which character walks
   const tutorial = document.querySelector('#tutorial');
   const tutorial2 = document.querySelector('#tutorial2');
+  const tutorial3 = document.querySelector('#tutorial3');
 
   let canvas = document.querySelector('canvas');
   let ctx = canvas.getContext('2d');

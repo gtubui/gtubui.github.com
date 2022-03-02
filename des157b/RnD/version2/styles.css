@@ -24,6 +24,12 @@
     margin-top: 20%;
 }
 
+#tutorial3 {
+    font-size: 12px;
+    position: absolute;
+    top: 250px;
+}
+
 .dialoguebox {
     display: flex;
     overflow: hidden;
@@ -50,19 +56,31 @@
     height: 30%;
 }
 
-#buttons1, #buttons2 {
+#buttons1, #buttons2, #submitted {
     position: absolute;
     top: 200px;
     width: 50%;
     height: 9%;
 }
 
-#buttons1 button, #buttons2 button {
+#submitted {
+    top: 250px;
+    right: -200px;
+}
+
+#buttons1 button, #buttons2 button, #close {
     padding: 2% 3% 2% 3%;
-    /* border: none; */
+    border: 2px black solid;
     /* background-color: yellow; */
     margin-right: 3%;
 }
+
+/* #closewindow {
+    position: absolute;
+    top: 200px;
+    width: 20%;
+    height: 9%;
+} */
 
 button:hover {
     background-color: lightgray;
