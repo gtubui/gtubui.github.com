@@ -131,7 +131,7 @@
       });
       TYPEWRITER1C
       // .typeString('Sign your name or leave the field empty to remain anonymous.')
-      .typeString('Sign your initials.')
+      .typeString("Sign your initials or anything you'd like.")
       .start();
       responseField.className = 'hidden';
       submitPage.className = 'showing';
@@ -261,7 +261,7 @@
   const facing_right = 0;
   const facing_left = 1;
   const frame_limit = 5; // speed at which frames cycle
-  const movement_speed = 10; // speed at which character walks
+  const movement_speed = 5; // speed at which character walks
   const tutorial = document.querySelector('#tutorial');
   const tutorial2 = document.querySelector('#tutorial2');
   const tutorial3 = document.querySelector('#tutorial3');
