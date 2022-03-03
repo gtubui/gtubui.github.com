@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pridel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae2b3ddb63.js" crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="background"><img src="images/bg.png" alt="background"></div>
+    <div id="backgroundfog" class="hidden"></div>
+    <div id="tutorial">Move with [A] [D] or [<i class="fas fa-arrow-left"></i>] [<i class="fas fa-arrow-right"></i>]</div>
+    <div id="tutorial2" class="hidden">Press [Enter] to interact.</div>
+    <div id="dialoguecontainer1" class="hidden">
+        <div class="dialoguebox">
+            <div><img class="portrait" src="images/portrait1.png" alt="npc 1 portrait"></div>
+            <div class="textblock">
+                <div id="text1a"></div>
+                <div id="text1b"></div>
+                <div id="text1c"></div>
+                <div id="text1d"></div>
+                <div id="buttons1">
+                    <button id="yes1">Yes!</button>
+                    <button id="no1">No thanks.</button>
+                </div>
+                <div id="tutorial3">(use mouse to interact with buttons)</div>
+                <div id="responsefield" class="hidden">
+                    <input type="text" id="response" name="response" placeholder="Type here." autocomplete="off">
+                    <br>
+                    <button id="next">Continue</button>
+                    <button id="cancel">Nevermind</button>
+                </div>
+                <div id="submitpage" class="hidden">
+                    <input type="text" id="sign" name="sign" placeholder="Sign here." autocomplete="off">
+                    <input type="submit" id="submit" value="Submit your reponse!">
+                </div>
+                <div id="submitted" class="hidden">
+                    <button id="close">Close Window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialoguecontainer2" class="hidden">
+        <div class="dialoguebox">
+            <div><img class="portrait" src="images/portrait2.png" alt="npc 2 portrait"></div>
+            <div class="textblock">
+                <div id="text2"></div>
+                <div id="buttons2">
+                    <button id="yes2">Yes, please!</button>
+                    <button id="no2">No thanks.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="responselibrary" class="hidden">
+        <div id="libraryheader">
+            <h2 id="librarytitle">What is Love to You?</h2>
+            <p id="scrollprompt">(scroll!)</p>
+            <div id="linedeco"></div>
+            <button id="closelibrary">X</button>
+        </div>
+        <div id="masonrylayout"></div>
+    </div>
+
+    <div id="npc1"><img src="images/npc1.png" alt="npc 1"></div>
+    <div id="npc2"><img src="images/npc2.png" alt="npc 2"></div>
+    <!-- <div id="npc3"><img src="images/npc3.png" alt="npc 3"></div>
+    <div id="npc4"><img src="images/npc4.png" alt="npc 4"></div> -->
+    <canvas width="1366" height="200"></canvas>
+    <footer><a href="sources.html">Sources</a></footer>
+</body>
+</html> 
