@@ -3,7 +3,7 @@ html {
     overflow: hidden;
 }
 
-#analysis, #storyboard, #brief, #visual, #flows {
+#analysis, #storyboard, #brief, #visual, #flows, #testing {
     overflow: visible;
 }
 
@@ -21,6 +21,10 @@ html {
 
 #flows body {
     height: 315vh;
+}
+
+#testing body {
+    height: 210vh;
 }
 
 body {
@@ -224,4 +228,45 @@ img {
 #report p {
     margin-left: 5%;
     width: 50%;
+}
+
+#testing #lineDeco {
+    width: 65%;
+}
+
+#testing ul {
+    display: block;
+}
+
+#testing li {
+    width: 95%;
+}
+
+#testing h3 {
+    font-size: 16px;
+}
+
+#testing .testText {
+    width: 50%;
+}
+#testing p {
+    width: 100%;
+}
+
+#testing img {
+    /* width: 100%; */
+}
+
+#testing #conclusion {
+    margin-left: 7%;
+    margin-bottom: 10%;
+    width: 100%;
+}
+
+#testing #conclusionFlex {
+    display: flex;
+}
+
+#conclusionFlex div {
+    width: 40%;
 }
