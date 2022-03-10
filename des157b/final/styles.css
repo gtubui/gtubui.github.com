@@ -1,0 +1,321 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 2.5em;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    animation: zoomIn 0.1s;
+}
+
+.slidein {
+    animation: slideInDown 0.5s;
+}
+
+#resizeprompt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13%;
+    margin-left: 4%;
+    padding: 2% 1% 2.5% 1%;
+    border: 3px solid black;
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    z-index: 3;
+    background-color: #c5e9fa;
+    background-image: linear-gradient(300deg, #d1edfa 0%, #ffee8b 37%, #ffd3d6 100%);
+}
+
+#resizeprompt p:first-of-type {
+    margin-bottom: 4%;
+    color: red;
+}
+
+#playerselect {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#playerselect img {
+    filter: drop-shadow(0 0 2px black);
+}
+
+#p1 {
+    margin-right: 2%;
+}
+
+#p1:hover, #p2:hover {
+    filter: drop-shadow(0 0 5px red);
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#backgroundfog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+#tutorial {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20%;
+    animation: slideInDown 0.5s;
+}
+
+#tutorial2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20%;
+}
+
+#tutorial3 {
+    font-size: 12px;
+    position: absolute;
+    top: 175px;
+}
+
+.dialoguebox {
+    position: relative;
+    display: flex;
+    background-color: rgba(255,255,255,0.9);
+    margin: 5% 15% 5% 15%;
+    border: 5px ridge black;
+    height: 260px;
+    animation: zoomIn 0.1s;
+}
+
+.portrait {
+    position: absolute;
+    top: 17px;
+    left: 50px;
+    filter: drop-shadow(0 0 1px gray);
+}
+
+.textblock {
+    margin-left: 32%;
+}
+
+#text1a, #text1b, #text1c, #text1d, #text1e, #text1f, #text2a, #text2b {
+    position: absolute;
+    top: 20px;
+    width: 55%;
+    height: 50%;
+}
+
+#buttons1, #buttons2, #submitted, #ok {
+    position: absolute;
+    top: 120px;
+    width: 50%;
+    height: 20%;
+}
+
+#ok {
+    top: 150px;
+}
+
+#buttons1 button, #buttons2 button, #close, #okbtn {
+    padding: 3%;
+    border: 2px black solid;
+    margin-right: 3%;
+}
+
+button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#responsefield {
+    position: absolute;
+    top: 110px;
+    width: 150%;
+}
+
+#response {
+    padding: 1%;
+    width: 30%;
+    border: 1px solid black;
+}
+
+#responsefield button {
+    margin-top: 1%;
+    padding: 1%;
+    border: 2px black solid;
+}
+
+#sign {
+    position: absolute;
+    top: 110px;
+    width: 50%;
+    padding: 1.5%;
+    border: 1px solid black;
+}
+
+#submit {
+    position: absolute;
+    top: 170px;
+    width: 40%;
+    padding: 1%;
+    padding: 1.5% 0% 1.5% 0%;
+    border: 2px black solid;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#submitted {
+    top: 180px;
+    right: -200px;
+}
+
+/* NPC 2 Interaction + Masonry Layout */
+#responselibrary {
+    position: relative;
+    margin: 5% 5% 5% 5%;
+    padding-top: 1%;
+    padding-left: 3%;
+    border: 5px ridge black;
+    height: 600px;
+    animation: zoomIn 0.1s;
+    z-index: 1;
+    overflow: scroll;
+    background-color: #c5e9fa;
+    background-image: linear-gradient(300deg, #d1edfa 0%, #ffee8b 37%, #ffd3d6 100%);
+}
+
+#libraryheader {
+    /* margin-left: 5%; */
+    margin-left: 1%;
+    display: flex;
+}
+
+#scrollprompt {
+    color: salmon;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+#linedeco {
+    position: relative;
+    top: 49px;
+    left: 42px;
+    width: 34%;
+    height: 2px;
+    background-color: #b9e5f9;
+    background-image: linear-gradient(300deg, #abe2fe 0%, #ffe552 37%, #ffb6bb 100%);
+}
+
+#closelibrary {
+    position: fixed;
+    top: 11%;
+    right: 6%;
+    padding: 1%;
+    padding-left: 1.2%;
+    font-size: 30px;
+    border: none;
+    background: transparent;
+    z-index: 3;
+}
+
+#closelibrary:hover {
+    cursor: pointer;
+}
+
+.grid-item {
+    margin-bottom: 2%;
+    padding: 1% 2% 1% 2%;
+    width: 43%;
+    background-color: #ffd3d6;
+    border: 2px solid black;
+}
+
+#npc1 {
+    position: absolute;
+    top: 459px;
+    left: 800px;
+    transform: scaleX(-1);
+}
+
+#npc2 {
+    position: absolute;
+    top: 459px;
+    left: 1125px;
+    transform: scaleX(-1);
+}
+
+/* #npc3 {
+    position: absolute;
+    top: 459px;
+    left: 1000px;
+    transform: scaleX(-1);
+}
+
+#npc4 {
+    position: absolute;
+    top: 459px;
+    left: 1125px;
+    transform: scaleX(-1);
+} */
+
+canvas {
+    position: absolute;
+    top: 459px;
+    left: 0;
+}
+
+footer a {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: lightskyblue;
+}
+
+#sources {
+    margin: 5%;
+}
+
+#sources img {
+    transform: scaleX(-1);
+}
+
+#sources a {
+    color: navy;
+}
+
+#sources a:hover {
+    color: hotpink;
+}
+
+#back {
+    margin-top: 32%;
+}
+
+#dog {
+    position: absolute;
+    top: 449px;
+    left: 1000px;
+}
